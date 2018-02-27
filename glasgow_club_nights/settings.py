@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'gcn',
 ]
 
 MIDDLEWARE = [
@@ -50,11 +51,13 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'glasgow_club_nights.urls'
-
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+MEDIA_DIR =  os.path.join(BASE_DIR, 'media')
+STATIC_URL = os.path.join(BASE_DIR, 'static')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATE_DIR, MEDIA_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -118,3 +121,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_ROOT = MEDIA_DIR
+MEDIA_URL = '/media/'
