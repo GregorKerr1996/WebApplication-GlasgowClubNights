@@ -51,9 +51,17 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'glasgow_club_nights.urls'
-TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+
+
 MEDIA_DIR =  os.path.join(BASE_DIR, 'media')
-STATIC_URL = os.path.join(BASE_DIR, 'static')
+
+BOOTSTRAP_DIR = os.path.join(BASE_DIR, 'bootstrap')
+
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [STATIC_DIR, ]
+
+
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -65,6 +73,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media'
             ],
         },
     },
@@ -123,3 +132,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
+BOOTSTRAP_URL = '/bootstrap/'
