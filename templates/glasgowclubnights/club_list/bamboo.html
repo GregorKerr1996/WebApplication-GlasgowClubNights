@@ -1,0 +1,115 @@
+{% extends 'glasgowclubnights/club_base.html' %}
+{% load staticfiles %}
+
+
+<div>
+    <hr>
+    <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4477.828234089852!2d-4.265826808121621!3d55.864156461671236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888442722791533%3A0xbc3a66dc4125abce!2sKushion!5e0!3m2!1sen!2suk!4v1520428000314"
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../static/club.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<head>
+    <title>
+        {% block title_block %}
+            Glasgow Club Nights
+        {% endblock %}
+
+    </title>
+
+</head>
+
+
+{% block body_block %}
+    <header class="mastheadBamboo">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+
+                <div class="col-md-6">
+                    <p style="text-align: center;"><img src="{{ MEDIA_URL }}bamboo.jpg" class="img-circle"
+                                                        class="img-responsive" alt="bamboo"></p>
+                </div>
+
+                <div class="col-md-3">
+                </div>
+            </div>
+        </div>
+        <br>
+    </header>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-2">
+
+            </div>
+
+            <div class="col-md-8">
+                <div class="thumbnail">
+                    <img src="{{ MEDIA_URL }}bamboo.jpg" alt="bamboo" class="img-responsive">
+                </div>
+            </div>
+
+            <div class="col-md-2">
+
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+
+    <div class=container">
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+
+            <div class="col-md-5">
+                <img src="{{ MEDIA_URL }}bamboo.jpg" alt="bamboo" class="img-responsive">
+            </div>
+
+            <div class="col-md-5">
+                <img src="{{ MEDIA_URL }}bamboo.jpg" alt="bamboo" class="img-responsive">
+            </div>
+
+            <div class="col-md-1">
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class=container">
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6">
+                <p style="text-align: center;">
+                    <br>
+                <hr>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8956.045393835931!2d-4.26235372655214!3d55.862469510398064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488844209a848bd1%3A0x4ee847ffd0fb92f3!2sBamboo!5e0!3m2!1sen!2suk!4v1520427329400"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </p>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+    </div>
+    </div>
+
+{% endblock %}
+Bamboo's location:
+
+</div>
+</body>
+</html>

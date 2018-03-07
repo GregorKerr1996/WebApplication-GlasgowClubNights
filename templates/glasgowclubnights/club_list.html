@@ -1,0 +1,35 @@
+{% extends 'glasgowclubnights/main_base.html' %}
+<link rel="stylesheet" type="text/css" href="../../static/home.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+{% block body_block %}
+    <section id="clublist">
+        <div class="container">
+            <div class="col-md-3">
+            </div>
+
+            <div class="col-md-6">
+                <p class="text-centre">
+                    <a href="{% url 'bamboo' %}">Bamboo</a><br>
+                    <a href="{% url 'cathouse' %}">Cathouse</a><br>
+                    <a href="{% url 'firewater' %}">Firewater</a><br>
+                    <a href="{% url 'garage' %}">Garage</a><br>
+                    <a href="{% url 'hive' %}">Hive</a><br>
+                    <a href="{% url 'kokomo' %}">Kokomo</a><br>
+                    <a href="{% url 'kushion' %}">Kushion</a><br>
+                    <a href="{% url 'la_cheetah' %}">La Cheetah</a><br>
+                    <a href="{% url 'mango' %}">Mango</a><br>
+                    <a href="{% url 'polo' %}">Polo</a><br>
+                    <a href="{% url 'sanctuary' %}">Sanctuary</a><br>
+                    <a href="{% url 'shimmy' %}">Shimmy</a><br>
+                    <a href="{% url 'subclub' %}">Subclub</a><br>
+                    <a href="{% url 'swg3' %}">SWG3</a><br>
+                    <a href="{% url 'viper' %}">Viper</a><br>
+                </p>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

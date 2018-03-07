@@ -1,0 +1,69 @@
+#intro {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+
+#intro .item {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#intro .item::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#intro .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#navbar .navbar-brand{
+    color: white;
+}
+
+#navbar .ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: white;
+}
+
+#navbar li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#navbar li a.active {
+    background-color: green;
+    color: black;
+}
+
+#navbar li a:hover:not(.active) {
+    background-color: grey;
+    color: black;
+}
+
+#clublist .ul{
+    font-style: italic;
+}
