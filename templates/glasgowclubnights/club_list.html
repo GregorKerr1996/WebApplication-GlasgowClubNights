@@ -1,6 +1,11 @@
 {% extends 'glasgowclubnights/main_base.html' %}
-<link rel="stylesheet" type="text/css" href="../../static/home.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+    .checked {
+        color: orange;
+    }
+</style>
+
+
 
 {% block body_block %}
     <section id="clublist">
@@ -30,6 +35,27 @@
             <div class="col-md-3">
             </div>
         </div>
+    </section>
+
+    <div id="star-rating-input">
+        <input id="fa-star-4" type="radio" name="reviewStars"/>
+        <label title="gorgeous" for="star-4"></label>
+
+        <input id="fa-star-3" type="radio" name="reviewStars"/>
+        <label title="good" for="star-3"></label>
+
+        <input id="fa-star-2" type="radio" name="reviewStars"/>
+        <label title="regular" for="star-2"></label>
+
+        <input id="fa-star-1" type="radio" name="reviewStars"/>
+        <label title="poor" for="star-1"></label>
+
+        <input id="fa-star-0" type="radio" name="reviewStars"/>
+        <label title="bad" for="star-0"></label>
+    </div>
+
+
+    </div>
     </section>
 
 {% endblock %}

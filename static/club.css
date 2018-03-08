@@ -1,106 +1,30 @@
 header.masthead {
-    background-image: url(images/kushionWorking.jpg);
+    background-image: url(images/top.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
+
 }
 
-header.mastheadKokomo {
-    background-image: url(images/kokomo.jpg);
+header.mastheadMain {
+    background-image: url(images/Beach.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
+
 }
 
-header.mastheadFirewater {
-    background-image: url(images/firewater.jpg);
+header.mastheadBottom {
+    background-image: url(images/glasgow.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
-}
-
-header.mastheadGarage {
-    background-image: url(images/garage.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 
 }
 
-header.mastheadHive {
-    background-image: url(images/hive.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-}
-
-header.mastheadLaCheetah {
-    background-image: url(images/lacheetah.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-}
-
-header.mastheadMango {
-    background-image: url(images/mango.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-}
-
-header.mastheadPolo {
-    background-image: url(images/polo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-}
-
-header.mastheadSanctuary {
-    background-image: url(images/thesancturary.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-}
-
-header.mastheadSubclub {
-    background-image: url(images/subclub.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-}
-
-header.mastheadSwg3 {
-    background-image: url(images/kokomo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-}
-
-header.mastheadViper {
-    background-image: url(images/viper.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-}
-
-header.mastheadBamboo {
-    background-image: url(images/Bamboo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-}
 
 #navbar_club .navbar-brand{
     color: white;

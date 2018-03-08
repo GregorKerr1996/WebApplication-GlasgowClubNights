@@ -1,10 +1,90 @@
-{%  extends 'glasgowclubnights/club_base.html' %}
-<body>
+{% extends 'glasgowclubnights/club_base.html' %}
+{% load staticfiles %}
 
-<h1>firewater</h1>
-<p>firewater</p>
-<div>
-    <br><hr>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4477.7541500191255!2d-4.269539947792343!3d55.86479912688449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48884426374407b3%3A0xb576610c90416a86!2sFirewater!5e0!3m2!1sen!2suk!4v1520427838016" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
-</body>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../static/club.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<head>
+    <title>
+        {% block title_block %}
+            Glasgow Club Nights
+        {% endblock %}
+
+    </title>
+
+</head>
+
+
+{% block body_block %}
+    <header class="masthead">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+
+                <div class="col-md-6">
+                    <p style="text-align: center"><img src="{{ MEDIA_URL }}firewater.jpg" class="img-circle"
+                                                       class="img-responsive" alt="firewater"></p>
+                </div>
+
+                <div class="col-md-3">
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-2">
+
+                </div>
+
+                <div class="col-md-8">
+                    <div class="thumbnail">
+                        <img src="{{ MEDIA_URL }}firewater.jpg" alt="firewater" class="img-responsive">
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+
+        <div class=container">
+            <div class="row">
+                <div class="col-md-1">
+                </div>
+
+                <div class="col-md-5">
+                    <img src="{{ MEDIA_URL }}firewater.jpg" alt="firewater" class="img-responsive">
+                </div>
+
+                <div class="col-md-5">
+                    <img src="{{ MEDIA_URL }}firewater.jpg" alt="firewater" class="img-responsive">
+                </div>
+
+                <div class="col-md-1">
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class=container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4477.7541500191255!2d-4.269539947792343!3d55.86479912688449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48884426374407b3%3A0xb576610c90416a86!2sFirewater!5e0!3m2!1sen!2suk!4v1520427838016"
+                width="100%;" height="50%;" frameborder="0" style="position:absolute;" allowfullscreen></iframe>
+
+
+    </div>
+
+{% endblock %}

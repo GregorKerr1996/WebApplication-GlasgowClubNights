@@ -8,6 +8,7 @@ urlpatterns = [
     url(r'^contact_us/$', views.contact_us, name='contact_us'),
     url(r'^club_list/$', views.club_list, name='club_list'),
     url(r'^login/$', views.login, name='login'),
+    url(r'^reviews/$', views.reviews, name='reviews'),
 
     url(r'^bamboo/$', views.bamboo, name='bamboo'),
     url(r'^cathouse/$', views.cathouse, name='cathouse'),

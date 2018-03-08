@@ -24,6 +24,10 @@ def login(request):
 
     return render(request, 'glasgowclubnights/login.html')
 
+def reviews(request):
+
+    return render(request, 'glasgowclubnights/reviews.html')
+
 def bamboo(request):
 
     return render(request, 'glasgowclubnights/club_list/bamboo.html')
