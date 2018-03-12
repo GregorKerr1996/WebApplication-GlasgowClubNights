@@ -28,6 +28,10 @@ def reviews(request):
 
     return render(request, 'glasgowclubnights/reviews.html')
 
+def register(request):
+
+    return render(request, 'glasgowclubnights/register.html')
+
 def bamboo(request):
 
     return render(request, 'glasgowclubnights/club_list/bamboo.html')

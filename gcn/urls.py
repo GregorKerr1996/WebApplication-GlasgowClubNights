@@ -9,6 +9,7 @@ urlpatterns = [
     url(r'^club_list/$', views.club_list, name='club_list'),
     url(r'^login/$', views.login, name='login'),
     url(r'^reviews/$', views.reviews, name='reviews'),
+    url(r'^register/$', views.register, name='register'),
 
     url(r'^bamboo/$', views.bamboo, name='bamboo'),
     url(r'^cathouse/$', views.cathouse, name='cathouse'),

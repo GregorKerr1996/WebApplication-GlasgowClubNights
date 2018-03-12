@@ -3,14 +3,15 @@
     width: 100%;
     height: 100vh;
     background: #000;
+    img: cover;
 }
 
 #intro .item {
-    width: 100%;
-    height: 100vh;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+    img: cover;
 }
 
 #intro .item::before {
@@ -23,6 +24,13 @@
     right: 0;
     left: 0;
     bottom: 0;
+    background-size: cover;
+    img: cover;
+}
+
+#intro .carousel-inner {
+    height: 100%;
+    img: cover;
 }
 
 #intro .carousel-container {
@@ -34,6 +42,10 @@
     top: 0;
     left: 0;
     right: 0;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    img: cover;
 }
 
 #navbar .navbar-brand {
@@ -79,6 +91,10 @@
 
 .checked {
     color: orange;
+}
+
+.item img {
+    width: 100%
 }
 
 #reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
@@ -154,4 +170,35 @@
 
 #reviewStars-input #star-5 {
     left: 265px;
+}
+
+#stretchimage #bamboo {
+    background-image: url(images/bamboo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#stretchimage .logo {
+    color: #fff;
+    font-weight: 800;
+    font-size: 14pt;
+    padding: 25px;
+    text-align: center;
+}
+
+#stretchimage .line {
+    padding-top: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+.star-rating {
+    line-height: 32px;
+    font-size: 1.25em;
+}
+
+.star-rating .fa-star {
+    color: yellow;
 }

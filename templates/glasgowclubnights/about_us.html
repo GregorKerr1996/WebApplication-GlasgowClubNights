@@ -1,7 +1,6 @@
 {% extends 'glasgowclubnights/main_base.html' %}
 {% load staticfiles %}
 
-
 {% block title_block %}
 
 {% endblock %}
@@ -9,19 +8,40 @@
 {% block body_block %}
     <div class="container">
         <div class="row">
-            <h2>Working Star Ratings for Bootstrap 3
-                <small>Hover and click on a star</small>
-            </h2>
+            <div class="col-lg-12">
+                <div class="star-rating">
+                    <span class="fa fa-star-o" data-rating="1"></span>
+                    <span class="fa fa-star-o" data-rating="2"></span>
+                    <span class="fa fa-star-o" data-rating="3"></span>
+                    <span class="fa fa-star-o" data-rating="4"></span>
+                    <span class="fa fa-star-o" data-rating="5"></span>
+                    <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                </div>
+            </div>
         </div>
-        <div class="row lead">
-            <div id="stars" class="starrr"></div>
-            You gave a rating of <span id="count">0</span> star(s)
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="star-rating">
+                    <span class="fa fa-star-o" data-rating="1"></span>
+                    <span class="fa fa-star-o" data-rating="2"></span>
+                    <span class="fa fa-star-o" data-rating="3"></span>
+                    <span class="fa fa-star-o" data-rating="4"></span>
+                    <span class="fa fa-star-o" data-rating="5"></span>
+                    <input type="hidden" name="whatever2" class="rating-value" value="1.9">
+                </div>
+            </div>
         </div>
-
-        <div class="row lead">
-            <p>Also you can give a default rating by adding attribute data-rating</p>
-            <div id="stars-existing" class="starrr" data-rating='4'></div>
-            You gave a rating of <span id="count-existing">4</span> star(s)
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="star-rating">
+                    <span class="fa fa-star-o" data-rating="1"></span>
+                    <span class="fa fa-star-o" data-rating="2"></span>
+                    <span class="fa fa-star-o" data-rating="3"></span>
+                    <span class="fa fa-star-o" data-rating="4"></span>
+                    <span class="fa fa-star-o" data-rating="5"></span>
+                    <input type="hidden" name="whatever3" class="rating-value" value="4.1">
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}

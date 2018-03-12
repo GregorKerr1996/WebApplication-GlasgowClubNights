@@ -1,6 +1,6 @@
 {% extends 'glasgowclubnights/main_base.html' %}
 {% load staticfiles %}
-
+<link rel="stylesheet" type="text/css" href="../../static/home.css">
 
 
 
@@ -14,20 +14,39 @@
     </div>
 
     <br>
-
     <div class="container">
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown button
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Please Select Club</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>bamboo</option>
+                <option>cathouse</option>
+                <option>firewater</option>
+                <option>garage</option>
+                <option>kokomo</option>
+                <option>kushion</option>
+                <option>laCheetah</option>
+                <option>mango</option>
+                <option>polo</option>
+                <option>sanctuary</option>
+                <option>shimmy</option>
+                <option>subclub</option>
+                <option>swg3</option>
+                <option>viper</option>
+
+            </select>
         </div>
 
-
     </div>
+
+
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+
+
+
+
+
 {% endblock %}

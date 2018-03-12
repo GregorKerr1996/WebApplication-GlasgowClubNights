@@ -7,16 +7,33 @@ from gcn.models import Club, Night
 
 def populate():
     kushion = [
-        {"night_name": "Juicy Tuesdays", "night_day": "Tuesday", "club_rating": "5" },
-        {"night_name": "Loco Thursdays", "night_day": "Thursday", "club_rating": "2" },
-        {"night_name": "Milk Fridays", "night_day": "Friday", "club_rating": "3"}
+        {"night_name": "Juicy Tuesday", "night_day": "Tuesday", "club_rating": "5" },
+        {"night_name": "Loco Thursday", "night_day": "Thursday", "club_rating": "2" },
+        {"night_name": "Milk Friday", "night_day": "Friday", "club_rating": "3"},
+        {"night_name": "Kushion Saturday", "night_day": "Saturday", "club_rating": "3"}
     ]
 
-    clubs = {"Clubs": {"Club Name": kushion}}
+    shimmy = [
+        {"night_name": "No Way Wednesday", "night_day": "Wednesday", "club_rating": "5"},
+        {"night_name": "Paper Friday", "night_day": "Friday", "club_rating": "2"},
+        {"night_name": "Shimmy Saturday", "night_day": "Saturday", "club_rating": "3"},
+        {"night_name": "Likewise Sunday", "night_day": "Sunday", "club_rating": "3"},
+    ]
+
+    bamboo = [
+        {"night_name": "WNB Wednesday", "night_day": "Wednesday", "club_rating": "5"},
+        {"night_name": "Get Loose Fridays", "night_day": "Friday", "club_rating": "2"},
+        {"night_name": "Bamboo Saturdays", "night_day": "Saturday", "club_rating": "3"},
+        {"night_name": "Disco Badger Sundays", "night_day": "Sunday", "club_rating": "3"},
+    ]
+
+    clubs = {"Kushion": {"club_nights": kushion},
+             "Shimmy":{"club_nights":shimmy},
+             "Bamboo": {"club_nights":bamboo}}
 
     for club, clubs_data in clubs.items():
         c=add_club(club)
-        for p in clubs_data["Club Name"]:
+        for p in clubs_data["club_nights"]:
             add_night(c, p["night_name"], p["night_day"], p["club_rating"])
 
 def add_night(club, night_name, night_day, club_rating):
