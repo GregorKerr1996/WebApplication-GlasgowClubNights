@@ -22,31 +22,69 @@
         {% endblock %}
     </title>
 </head>
-<section id="navbar_club">
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand">Glasgow Club Nights</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="active">
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'login' %}">Login</a></li>
-                <li><a href="{% url 'club_list' %}">Club List</a></li>
-                <li><a href="{% url 'about_us' %}">About Us</a></li>
-                <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+{% if user.is_authenticated %}
 
-            </ul>
-            <form class="nav navbar-form navbar-right" action="/action_page.php">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search..">
-                    <button type="submit" class="btn btn-default">Submit</button>
+        <section id="navbar">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand">Glasgow Club Nights</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'club_list' %}">Club List</a></li>
+                        <li><a href="{% url 'reviews' %}">Make a Review</a></li>
+                        <li><a href="{% url 'about_us' %}">About Us</a></li>
+                        <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+                        <li><a href="{% url 'logout' %}">Logout</a></li>
+
+                        <li> {{ user.username }}</li>
+                    </ul>
+                    <form class="nav navbar-form navbar-right" action="/action_page.php">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search..">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+
+
+                    </form>
                 </div>
 
-            </form>
-        </div>
-    </nav>
-</section>
+
+            </nav>
+        </section>
+
+    {% else %}
+
+        <section id="navbar">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand">Glasgow Club Nights</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'login' %}">Login</a></li>
+                        <li><a href="{% url 'club_list' %}">Club List</a></li>
+                        <li><a href="{% url 'about_us' %}">About Us</a></li>
+                        <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+                        <li> {{ user.username }}</li>
+
+                    </ul>
+                    <form class="nav navbar-form navbar-right" action="/action_page.php">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search..">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </section>
+
+
+    {% endif %}
+
 {% block body_block %}
 {% endblock %}
 </html>

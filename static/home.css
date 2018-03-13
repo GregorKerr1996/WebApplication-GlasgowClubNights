@@ -76,9 +76,7 @@
     color: black;
 }
 
-#clublist .ul {
-    font-style: italic;
-}
+
 
 .star-rating {
     line-height: 32px;
@@ -172,27 +170,6 @@
     left: 265px;
 }
 
-#stretchimage #bamboo {
-    background-image: url(images/bamboo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-#stretchimage .logo {
-    color: #fff;
-    font-weight: 800;
-    font-size: 14pt;
-    padding: 25px;
-    text-align: center;
-}
-
-#stretchimage .line {
-    padding-top: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-align: center;
-}
 
 .star-rating {
     line-height: 32px;
@@ -201,4 +178,21 @@
 
 .star-rating .fa-star {
     color: yellow;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 28px;
+}
+
+header.mastheadBottom {
+    background-image: url(images/headerBlack.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }

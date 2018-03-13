@@ -7,7 +7,8 @@ urlpatterns = [
     url(r'^about_us/$', views.about_us, name='about_us'),
     url(r'^contact_us/$', views.contact_us, name='contact_us'),
     url(r'^club_list/$', views.club_list, name='club_list'),
-    url(r'^login/$', views.login, name='login'),
+    url(r'^login/$', views.user_login, name='login'),
+    url(r'^logout/$', views.user_logout, name='logout'),
     url(r'^reviews/$', views.reviews, name='reviews'),
     url(r'^register/$', views.register, name='register'),
 

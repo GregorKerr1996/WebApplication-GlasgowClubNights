@@ -6,8 +6,8 @@
         <title>Glasgow Club Nights</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link href="../../static/home.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../../static/club.css">
+        <link rel="stylesheet" type="text/css" href="../../static/home.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"
               id="bootstrap-css">
@@ -25,46 +25,73 @@
         <!-- Add icon for star library -->
         <link rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <script>
-
-            var $star_rating = $('.star-rating .fa');
-
-
-
-        </script>
     </head>
     <body>
 
-    <section id="navbar">
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand">Glasgow Club Nights</a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li class="active">
-                    <li><a href="{% url 'home' %}">Home</a></li>
-                    <li><a href="{% url 'login' %}">Login</a></li>
-                    <li><a href="{% url 'club_list' %}">Club List</a></li>
-                    <li><a href="{% url 'reviews' %}">Make a Review</a></li>
-                    <li><a href="{% url 'about_us' %}">About Us</a></li>
-                    <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+    {% if user.is_authenticated %}
 
-                </ul>
-                <form class="nav navbar-form navbar-right" action="/action_page.php">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..">
-                        <button type="submit" class="btn btn-default">Submit</button>
+        <section id="navbar">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand">Glasgow Club Nights</a>
                     </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'club_list' %}">Club List</a></li>
+                        <li><a href="{% url 'reviews' %}">Make a Review</a></li>
+                        <li><a href="{% url 'about_us' %}">About Us</a></li>
+                        <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+                        <li><a href="{% url 'logout' %}">Logout</a></li>
+
+                        <li> {{ user.username }}</li>
+                    </ul>
+                    <form class="nav navbar-form navbar-right" action="/action_page.php">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search..">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
 
 
-                </form>
-            </div>
+                    </form>
+                </div>
 
 
-        </nav>
-    </section>
+            </nav>
+        </section>
+
+    {% else %}
+
+        <section id="navbar">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand">Glasgow Club Nights</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'login' %}">Login</a></li>
+                        <li><a href="{% url 'club_list' %}">Club List</a></li>
+                        <li><a href="{% url 'about_us' %}">About Us</a></li>
+                        <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+
+                        <li> {{ user.username }}</li>
+
+                    </ul>
+                    <form class="nav navbar-form navbar-right" action="/action_page.php">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search..">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </section>
+
+
+    {% endif %}
+
 {% endblock %}
 
 {% block body_block %}

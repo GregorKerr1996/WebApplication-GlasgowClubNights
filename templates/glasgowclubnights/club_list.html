@@ -1,66 +1,320 @@
 {% extends 'glasgowclubnights/main_base.html' %}
 
 {% block body_block %}
-    <div id="stretchimage">
-        <div id="bamboo">
-            <div class="col-xs-5 line">
-                <hr>
-            </div>
-            <div class="col-xs-2 logo">Bamboo</div>
-            <div class="col-xs-5 line">
-                <hr>
-            </div>
-        </div>
-    </div>
-
-
-    <section id="clublist">
+    <header class="masthead">
         <div class="container">
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
             <div class="col-md-3">
             </div>
+
             <div class="col-md-6">
-                <p class="text-centre">
-                    <a href="{% url 'bamboo' %}">Bamboo</a><br>
-                    <a href="{% url 'cathouse' %}">Cathouse</a><br>
-                    <a href="{% url 'firewater' %}">Firewater</a><br>
-                    <a href="{% url 'garage' %}">Garage</a><br>
-                    <a href="{% url 'hive' %}">Hive</a><br>
-                    <a href="{% url 'kokomo' %}">Kokomo</a><br>
-                    <a href="{% url 'kushion' %}">Kushion</a><br>
-                    <a href="{% url 'la_cheetah' %}">La Cheetah</a><br>
-                    <a href="{% url 'mango' %}">Mango</a><br>
-                    <a href="{% url 'polo' %}">Polo</a><br>
-                    <a href="{% url 'sanctuary' %}">Sanctuary</a><br>
-                    <a href="{% url 'shimmy' %}">Shimmy</a><br>
-                    <a href="{% url 'subclub' %}">Subclub</a><br>
-                    <a href="{% url 'swg3' %}">SWG3</a><br>
-                    <a href="{% url 'viper' %}">Viper</a><br>
-                </p>
+                <a href="{% url 'bamboo' %}">
+                    <p style="align-content: center"><img src="{{ MEDIA_URL }}bamboo.jpg" class="img-circle"
+                                                          class="img-responsive"
+                                                          style="width: 40%" alt="Bamboo"></p>
+                </a>
+                <div class="centered">Bamboo<br></div>
             </div>
             <div class="col-md-3">
+            </div>
+
+            <div class="col-md-12">
+                <hr>
             </div>
         </div>
-    </section>
 
-    <div id="star-rating-input">
-        <input id="fa-star-4" type="radio" name="reviewStars"/>
-        <label title="gorgeous" for="star-4"></label>
+            <div class="container">
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                </div>
 
-        <input id="fa-star-3" type="radio" name="reviewStars"/>
-        <label title="good" for="star-3"></label>
-
-        <input id="fa-star-2" type="radio" name="reviewStars"/>
-        <label title="regular" for="star-2"></label>
-
-        <input id="fa-star-1" type="radio" name="reviewStars"/>
-        <label title="poor" for="star-1"></label>
-
-        <input id="fa-star-0" type="radio" name="reviewStars"/>
-        <label title="bad" for="star-0"></label>
-    </div>
+                <div class="col-md-6">
+                    <a href="{% url 'firewater' %}">
+                        <p style="align-content: center"><img src="{{ MEDIA_URL }}firewater.jpg" class="img-circle"
+                                                              class="img-responsive"
+                                                              style="width: 40%" alt="Firewater"></p>
+                    </a>
+                    <div class="centered">Firewater<br></div>
+                </div>
+                <div class="col-md-3">
+                </div>
 
 
-    </div>
-    </section>
+            </div>
+
+            <div class="container">
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+                <div class="col-md-6">
+                    <a href="{% url 'garage' %}">
+                        <p style="align-content: center"><img src="{{ MEDIA_URL }}garage.jpg" class="img-circle"
+                                                              class="img-responsive"
+                                                              style="width: 40%" alt="Garage"></p>
+                    </a>
+                    <div class="centered">Garage<br></div>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+
+            </div>
+            <div class="container">
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+                <div class="col-md-6">
+                    <a href="{% url 'hive' %}">
+                        <p style="align-content: center"><img src="{{ MEDIA_URL }}hive.jpg" class="img-circle"
+                                                              class="img-responsive"
+                                                              style="width: 40%" alt="Hive"></p>
+                    </a>
+                    <div class="centered">Hive<br></div>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+
+            </div>
+            <div class="container">
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+                <div class="col-md-6">
+                    <a href="{% url 'kokomo' %}">
+                        <p style="align-content: center"><img src="{{ MEDIA_URL }}kokomo1.jpg" class="img-circle"
+                                                              class="img-responsive"
+                                                              style="width: 40%" alt="Kokomo"></p>
+                    </a>
+                    <div class="centered">Kokomo<br></div>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+
+            </div>
+            <div class="container">
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+                <div class="col-md-6">
+                    <a href="{% url 'kushion' %}">
+                        <p style="align-content: center"><img src="{{ MEDIA_URL }}kushion.jpg" class="img-circle"
+                                                              class="img-responsive"
+                                                              style="width: 40%" alt="Kushion"></p>
+                    </a>
+                    <div class="centered">Kushion<br></div>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+
+            </div>
+            <div class="container">
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+                <div class="col-md-6">
+                    <a href="{% url 'la_cheetah' %}">
+                        <p style="align-content: center"><img src="{{ MEDIA_URL }}lacheetah.jpg" class="img-circle"
+                                                              class="img-responsive"
+                                                              style="width: 40%" alt="La Cheetah"></p>
+                    </a>
+                    <div class="centered">La Cheetah<br></div>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+
+            </div>
+            <div class="container">
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+                <div class="col-md-6">
+                    <a href="{% url 'mango' %}">
+                        <p style="align-content: center"><img src="{{ MEDIA_URL }}mango.jpg" class="img-circle"
+                                                              class="img-responsive"
+                                                              style="width: 40%" alt="Mango"></p>
+                    </a>
+                    <div class="centered">Mango<br></div>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+
+            </div>
+            <div class="container">
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+                <div class="col-md-6">
+                    <a href="{% url 'polo' %}">
+                        <p style="align-content: center"><img src="{{ MEDIA_URL }}polo.jpg" class="img-circle"
+                                                              class="img-responsive"
+                                                              style="width: 40%" alt="Polo"></p>
+                    </a>
+                    <div class="centered">Polo<br></div>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+
+            </div>
+            <div class="container">
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+                <div class="col-md-6">
+                    <a href="{% url 'sanctuary' %}">
+                        <p style="align-content: center"><img src="{{ MEDIA_URL }}thesancturary.jpg" class="img-circle"
+                                                              class="img-responsive"
+                                                              style="width: 40%" alt="Sanctuary"></p>
+                    </a>
+                    <div class="centered">Sanctuary<br></div>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+
+            </div>
+            <div class="container">
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+                <div class="col-md-6">
+                    <a href="{% url 'shimmy' %}">
+                        <p style="align-content: center"><img src="{{ MEDIA_URL }}shimmy.jpg" class="img-circle"
+                                                              class="img-responsive"
+                                                              style="width: 40%" alt="Shimmy"></p>
+                    </a>
+                    <div class="centered">Shimmy<br></div>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+
+            </div>
+            <div class="container">
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+                <div class="col-md-6">
+                    <a href="{% url 'subclub' %}">
+                        <p style="align-content: center"><img src="{{ MEDIA_URL }}subclub.jpg" class="img-circle"
+                                                              class="img-responsive"
+                                                              style="width: 40%" alt="Subclub"></p>
+                    </a>
+                    <div class="centered">Subclub<br></div>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+
+            </div>
+            <div class="container">
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+                <div class="col-md-6">
+                    <a href="{% url 'swg3' %}">
+                        <p style="align-content: center"><img src="{{ MEDIA_URL }}swg3.jpg" class="img-circle"
+                                                              class="img-responsive"
+                                                              style="width: 40%" alt="SWG3"></p>
+                    </a>
+                    <div class="centered">SWG3<br></div>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+
+            </div>
+            <div class="container">
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+                <div class="col-md-6">
+                    <a href="{% url 'viper' %}">
+                        <p style="align-content: center"><img src="{{ MEDIA_URL }}viper.jpg" class="img-circle"
+                                                              class="img-responsive"
+                                                              style="width: 40%" alt="Viper"></p>
+                    </a>
+                    <div class="centered">Viper<br></div>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+
+
+        </header>
 
 {% endblock %}

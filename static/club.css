@@ -4,29 +4,25 @@ header.masthead {
     background-position: center;
     background-size: cover;
 
-
 }
 
 header.mastheadMain {
-    background-image: url(images/Beach.jpg);
+    background-image: url(images/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 
 }
 
 header.mastheadBottom {
-    background-image: url(images/glasgow.jpg);
+    background-image: url(images/stars.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
-
 }
 
-
-#navbar_club .navbar-brand{
+#navbar_club .navbar-brand {
     color: white;
 }
 
@@ -52,4 +48,8 @@ header.mastheadBottom {
 #navbar_club li a:hover:not(.active) {
     background-color: grey;
     color: black;
+}
+
+.text {
+    text-align: center;
 }
