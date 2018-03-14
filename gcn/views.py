@@ -1,10 +1,11 @@
-from django.shortcuts import render
-from django.http import HttpResponse
-from gcn.forms import UserForm, UserProfileForm
 from django.contrib.auth import authenticate, login, logout
-from django.http import HttpResponseRedirect, HttpResponse
-from django.core.urlresolvers import reverse
 from django.contrib.auth.decorators import login_required
+from django.core.urlresolvers import reverse
+from django.http import HttpResponse
+from django.http import HttpResponseRedirect, HttpResponse
+from django.shortcuts import render
+
+from gcn.forms import UserForm, UserProfileForm
 
 
 # Create your views here.
@@ -26,6 +27,7 @@ def contact_us(request):
 
 def club_list(request):
     return render(request, 'glasgowclubnights/club_list.html')
+
 
 @login_required
 def user_logout(request):

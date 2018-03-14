@@ -26,9 +26,16 @@ class NightAdmin(admin.ModelAdmin):
     list_display = ('night_name', 'club_list')
 
 
-class userprofile(models.Model):
+class UserForm(models.Model):
     user = models.OneToOneField(User)
-    website = models.URLField(blank=True)
-    picture = models.ImageField(upload_to='profile_images', blank=True)
+
+
     def __str__(self):
         return self.user.username
+
+class UserProfileForm(models.Model):
+    website = models.URLField(blank=True)
+    picture = models.ImageField(upload_to='profile_images', blank=True)
+
+class UserPictureForm(models.Model):
+    picture = models.ImageField(upload_to='profile_images', blank=True)

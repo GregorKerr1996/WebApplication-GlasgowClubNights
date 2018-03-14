@@ -3,11 +3,13 @@ header.masthead {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height:100%;
+
 
 }
 
 header.mastheadMain {
-    background-image: url(images/background.jpg);
+    background-image: url(images/stars.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -52,4 +54,30 @@ header.mastheadBottom {
 
 .text {
     text-align: center;
+}
+
+.star-rating {
+    line-height: 32px;
+    font-size: 1.25em;
+}
+
+.star-rating .fa-star {
+    color: yellow;
+}
+
+.starrr {
+    color: #ffcc00;
+}
+
+.infoBackground {
+    background: whitesmoke;
+}
+
+.h3 {
+    color: white;
+
+}
+
+.container-full {
+    height: 100%;
 }

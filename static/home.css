@@ -76,8 +76,6 @@
     color: black;
 }
 
-
-
 .star-rating {
     line-height: 32px;
     font-size: 1.25em;
@@ -170,7 +168,6 @@
     left: 265px;
 }
 
-
 .star-rating {
     line-height: 32px;
     font-size: 1.25em;
@@ -190,7 +187,7 @@
 }
 
 header.mastheadBottom {
-    background-image: url(images/headerBlack.jpg);
+    background-image: url(images/stars.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
