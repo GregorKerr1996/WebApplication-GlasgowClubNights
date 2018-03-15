@@ -1,31 +1,32 @@
 {% extends 'glasgowclubnights/main_base.html' %}
 
 {% block body_block %}
-    <header class="mastheadBottom">
-        <div class="container">
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <hr>
+    <section id="background">
+        <header class="mastheadBottom">
+            <div class="container">
             </div>
-            <div class="col-md-3">
-            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+                <div class="col-md-3">
+                </div>
 
-            <div class="col-md-6">
-                <a href="{% url 'bamboo' %}">
-                    <p style="align-content: center"><img src="{{ MEDIA_URL }}bamboo.jpg" class="img-circle"
-                                                          class="img-responsive"
-                                                          style="width: 40%" alt="Bamboo"></p>
-                </a>
-                <div class="centered">Bamboo<br></div>
-            </div>
-            <div class="col-md-3">
-            </div>
+                <div class="col-md-6">
+                    <a href="{% url 'bamboo' %}">
+                        <p style="align-content: center"><img src="{{ MEDIA_URL }}bamboo.jpg" class="img-circle"
+                                                              class="img-responsive"
+                                                              style="width: 40%" alt="Bamboo"></p>
+                    </a>
+                    <div class="centered">Bamboo<br></div>
+                </div>
+                <div class="col-md-3">
+                </div>
 
-            <div class="col-md-12">
-                <hr>
+                <div class="col-md-12">
+                    <hr>
+                </div>
             </div>
-        </div>
 
             <div class="container">
             </div>
@@ -316,5 +317,5 @@
 
 
         </header>
-
+    </section>
 {% endblock %}

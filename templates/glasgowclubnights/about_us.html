@@ -1,3 +1,50 @@
+<script>
+    // Open the Modal
+    function openModal() {
+        document.getElementById('myModal').style.display = "block";
+    }
+
+    // Close the Modal
+    function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+</script>
+
 {% extends 'glasgowclubnights/main_base.html' %}
 {% load staticfiles %}
 
@@ -7,41 +54,242 @@
 
 {% block body_block %}
     <div class="container">
+
         <div class="row">
-            <div class="col-lg-12">
-                <div class="star-rating">
-                    <span class="fa fa-star-o" data-rating="1"></span>
-                    <span class="fa fa-star-o" data-rating="2"></span>
-                    <span class="fa fa-star-o" data-rating="3"></span>
-                    <span class="fa fa-star-o" data-rating="4"></span>
-                    <span class="fa fa-star-o" data-rating="5"></span>
-                    <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+            <div class="col-sm-3">
+                <p class="text-center"><strong>Gregor CEO</strong></p><br>
+                <a href="#demo" data-toggle="collapse">
+                    <img src="{{ MEDIA_URL }}gregor.jpg" class="img-circle person" alt="Random Name" width="255"
+                         height="255">
+                </a>
+                <div id="demo" class="collapse">
+                    <p>Guitarist and Lead Vocalist</p>
+                    <p>Loves long walks on the beach</p>
+                    <p>Member since 1988</p>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="star-rating">
-                    <span class="fa fa-star-o" data-rating="1"></span>
-                    <span class="fa fa-star-o" data-rating="2"></span>
-                    <span class="fa fa-star-o" data-rating="3"></span>
-                    <span class="fa fa-star-o" data-rating="4"></span>
-                    <span class="fa fa-star-o" data-rating="5"></span>
-                    <input type="hidden" name="whatever2" class="rating-value" value="1.9">
+            <div class="col-sm-3">
+                <p class="text-center"><strong>NateDog</strong></p><br>
+                <a href="#demo2" data-toggle="collapse">
+                    <img src="{{ MEDIA_URL }}nathan.jpg" class="img-circle person" alt="Random Name" width="255"
+                         height="255">
+                </a>
+                <div id="demo2" class="collapse">
+                    <p>Drummer</p>
+                    <p>Loves drummin'</p>
+                    <p>Member since 1988</p>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="star-rating">
-                    <span class="fa fa-star-o" data-rating="1"></span>
-                    <span class="fa fa-star-o" data-rating="2"></span>
-                    <span class="fa fa-star-o" data-rating="3"></span>
-                    <span class="fa fa-star-o" data-rating="4"></span>
-                    <span class="fa fa-star-o" data-rating="5"></span>
-                    <input type="hidden" name="whatever3" class="rating-value" value="4.1">
+            <div class="col-sm-3">
+                <p class="text-center"><strong>Matthew Peasant</strong></p><br>
+                <a href="#demo3" data-toggle="collapse">
+                    <img src="{{ MEDIA_URL }}matthew.jpg" class="img-circle person" alt="Random Name" width="255"
+                         height="255">
+                </a>
+                <div id="demo3" class="collapse">
+                    <p>Bass player</p>
+                    <p>Loves math</p>
+                    <p>Member since 2005</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p class="text-center"><strong>C dawg</strong></p><br>
+                <a href="#demo4" data-toggle="collapse">
+                    <img src="{{ MEDIA_URL }}coryBoydDuck.jpg" class="img-circle person" alt="Random Name" width="255"
+                         height="255">
+                </a>
+                <div id="demo4" class="collapse">
+                    <p>Bass player</p>
+                    <p>Loves math</p>
+                    <p>Member since 2005</p>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <ul class="timeline">
+            <li class="timeline-inverted">
+                <div class="timeline-image">
+                    <img class="img-circle img-responsive" src={{ MEDIA_URL }}coryBoydDuck.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+
+                        <h4 class="subheading">First Commit</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-muted">
+                            The first step to our journey was deciding what we were
+                            going to do our project on!
+                            As we are all border-line alcholics we decided to do it on
+                            what we know best... nightclubs!
+                        </p>
+                    </div>
+                </div>
+                <div class="line"></div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image">
+                    <img class="img-circle img-responsive" src={{ MEDIA_URL }}coryBoydDuck.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+
+                        <h4 class="subheading">Discovering Bootstrap</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-muted">
+                            Discovering bootstrap has been one of our best discoveries
+                            throughout this project. Through using its CSS methods we are able to give
+                            a professional look and feel website which is fully responsive
+                        </p>
+                    </div>
+                </div>
+                <div class="line"></div>
+            </li>
+            <li>
+                <div class="timeline-image">
+                    <img class="img-circle img-responsive" src={{ MEDIA_URL }}coryBoydDuck.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+
+                        <h4 class="subheading">Hello World</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-muted">
+                            Hello World! first inherited in 1974, now used in our first live page,
+                            we had successfully linked up views and URLS and were on our way to creating
+                            GlasgowClubNights
+                        </p>
+                    </div>
+                </div>
+                <div class="line"></div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image">
+                    <img class="img-circle img-responsive" src={{ MEDIA_URL }}coryBoydDuck.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+
+                        <h4 class="subheading">Home Page</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-muted">
+                            Home Page lift off, just like elon musk's roadster in space, we were truely on
+                            way to the finish line.
+                            With setting up the carousel things were looking "dead on" for the wads at
+                            GCN HQ
+                        </p>
+                    </div>
+                </div>
+                <div class="line"></div>
+            </li>
+            <li>
+                <div class="timeline-image">
+                    <img class="img-circle img-responsive" src={{ MEDIA_URL }}coryBoydDuck.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+
+                        <h4 class="subheading">Main Pages</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-muted">
+                            A productive day at GCN HQ led us to creating main pages
+                            , adding relative links to club websites and general graphic updates.
+                        </p>
+                    </div>
+                </div>
+                <div class="line"></div>
+            </li>
+            <li>
+                <div class="timeline-image">
+                    <img class="img-circle img-responsive" src={{ MEDIA_URL }}coryBoydDuck.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+
+                        <h4 class="subheading">Database</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-muted">
+                            Database - completed it mate.
+                            Maps - completed it mate
+                            new layout - Completed it mate
+                            Social Media links - Created them mate
+                        </p>
+                    </div>
+                </div>
+                <div class="line"></div>
+            </li>
+            <li>
+                <div class="timeline-image">
+                    <img class="img-circle img-responsive" src={{ MEDIA_URL }}coryBoydDuck.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+
+                        <h4 class="subheading">Log in </h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-muted">
+                            Tough conditions at GCN with no white monster reduced
+                            the wads and boyds had to search elsewhere, determined and with the cold
+                            crisp light sensation, we managed to find 4 cans of the holy grail
+                            and began to code. Log in pages/register/log out all became functional
+                            in a matter of moments. We done some generla html upgrades and
+                            made the club list more appealing.
+                        </p>
+                    </div>
+                </div>
+                <div class="line"></div>
+            </li>
+            <li>
+                <div class="timeline-image">
+                    <img class="img-circle img-responsive" src={{ MEDIA_URL }}coryBoydDuck.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+
+                        <h4 class="subheading">Working Carousel </h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-muted">
+                            Like a horse on a carousel we felt stuck, cold, helpless.
+                            Until.
+                            out of NEiiiiighhh-where we got it. our carousel on our
+                            home page now chnages day dependant.
+                            Unreal scenes at GCN where several members searched what club was good
+                            tonight and a sesh revealed itself.
+                        </p>
+                    </div>
+                </div>
+                <div class="line"></div>
+            </li>
+            <li>
+                <div class="timeline-image">
+                    <img class="img-circle img-responsive" src={{ MEDIA_URL }}coryBoydDuck.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+
+                        <h4 class="subheading">Reviews With stars in our eyes</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-muted">
+                            after much difficulty getting the stars to work, an angel came down
+                            and revelead the answer.
+                            Now we can truely say just like just jack - "Now why do you wanna go
+                            and put starz in their eyes"
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
 {% endblock %}

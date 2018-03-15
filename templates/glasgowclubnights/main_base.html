@@ -3,6 +3,7 @@
 {% load staticfiles %}
 {% block nav_block %}
     <head>
+
         <title>Glasgow Club Nights</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,6 +28,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
         <!-- Add icon for star library -->
         <link rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -47,17 +50,36 @@
                         <li><a href="{% url 'reviews' %}">Make a Review</a></li>
                         <li><a href="{% url 'about_us' %}">About Us</a></li>
                         <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
-                        <li><a href="{% url 'logout' %}">Logout</a></li>
-                        <li> {{ user.username }}</li>
+                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                        <li></li>
+                        <li style="float:right" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{ user.username }}
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'logout' %}">Logout</a></li>
+
+                            </ul>
+                        </li>
+
+
+
+
                     </ul>
                     <form class="nav navbar-form navbar-right" action="/action_page.php">
+
+
                         <div class="form-group">
+
+
                             <input type="text" class="form-control" placeholder="Search..">
                             <button type="submit" class="btn btn-default">Submit</button>
+
                         </div>
 
 
+</li>
                     </form>
+
                 </div>
 
 
@@ -79,7 +101,6 @@
                         <li><a href="{% url 'club_list' %}">Club List</a></li>
                         <li><a href="{% url 'about_us' %}">About Us</a></li>
                         <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
-
                         <li> {{ user.username }}</li>
 
                     </ul>
@@ -87,7 +108,9 @@
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Search..">
                             <button type="submit" class="btn btn-default">Submit</button>
+
                         </div>
+
                     </form>
                 </div>
             </nav>
