@@ -48,343 +48,292 @@
 
 {% extends 'glasgowclubnights/main_base.html' %}
 {% block body_block %}
-
-
-
-
-
     <section id="intro">
-    <div class="container">
-    <section id="carousel-title">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                </div>
-                <div class="col-md-6">
-                    <p id="carousel-header" class="opacityPulse-css"></p>
-                </div>
-                <div class="col-md-3">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-
-                    <div class="item active">
-                        <div id="first">
-
+            <section id="carousel-title">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
                         </div>
-                        <div class="carousel-caption">
-                            <h2 id="cap1"></h2>
+                        <div class="col-md-6">
+                            <p id="carousel-header" class="opacityPulse-css"></p>
                         </div>
-                    </div>
-
-                    <div class="item">
-                        <div id="second">
-
-                        </div>
-
-                        <div class="carousel-caption">
-                            <h2 id="cap2"></h2>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div id="third">
-
-                        </div>
-                        <div class="carousel-caption">
-                            <h2 id="cap3"></h2>
+                        <div class="col-md-3">
                         </div>
                     </div>
                 </div>
+                <div class="container">
+                    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
 
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+
+                            <div class="item active">
+                                <div id="first">
+
+                                </div>
+                                <div class="carousel-caption">
+                                    <h2 id="cap1"></h2>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div id="second">
+
+                                </div>
+
+                                <div class="carousel-caption">
+                                    <h2 id="cap2"></h2>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div id="third">
+
+                                </div>
+                                <div class="carousel-caption">
+                                    <h2 id="cap3"></h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>
     </section>
 
-    <hr id="mainpage" class="style-eight">
-
     <div class="container">
-    <h2 style="text-align:center">Top-rated Clubs</h2>
-    <br>
-    <div class="clubCircle">
-        <!-- Images used to open the lightbox -->
-        <div class="row">
-            <div class="column">
-                <img src="{{ MEDIA_URL }}kushion.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-            </div>
-            <div class="column">
-                <img src="{{ MEDIA_URL }}kushion.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-            </div>
-            <div class="column">
-                <img src="{{ MEDIA_URL }}nathan.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-            </div>
-            <div class="column">
-                <img src="{{ MEDIA_URL }}nathan.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
-            </div>
-        </div>
-
-        <!-- The Modal/Lightbox -->
-        <div id="myModal" class="modal">
-            <span class="close cursor" onclick="closeModal()">&times;</span>
-            <div class="modal-content">
-
-                <div class="mySlides">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="{{ MEDIA_URL }}nathan.jpg" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">2 / 4</div>
-                    <img src="{{ MEDIA_URL }}nathan.jpg" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">3 / 4</div>
-                    <img src="{{ MEDIA_URL }}nathan.jpg" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">4 / 4</div>
-                    <img src="{{ MEDIA_URL }}nathan.jpg" style="width:100%">
-                </div>
-
-                <!-- Next/previous controls -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                <!-- Caption text -->
-                <div class="caption-container">
-                    <p id="caption"></p>
-                </div>
-
-                <!-- Thumbnail image controls -->
-                <div class="column">
-                    <img class="demo" src="{{ MEDIA_URL }}nathan.jpg" onclick="currentSlide(1)" alt="Nature">
-                </div>
-
-                <div class="column">
-                    <img class="demo" src="{{ MEDIA_URL }}nathan.jpg" onclick="currentSlide(2)" alt="Trolltunga">
-                </div>
-
-                <div class="column">
-                    <img class="demo" src="{{ MEDIA_URL }}nathan.jpg" onclick="currentSlide(3)" alt="Mountains">
-                </div>
-
-                <div class="column">
-                    <img class="demo" src="{{ MEDIA_URL }}nathan.jpg" onclick="currentSlide(4)" alt="Lights">
-                </div>
-            </div>
-        </div>
-        <br>
-        <hr id="mainpage" class="style-eight">
-
-        <div class="container">
-            <h2 style="text-align:center">Top-rated Clubs</h2>
-            <br>
+        <h2 style="text-align:center">Top-rated Clubs</h2>
+        {% if clubs %}
             <div class="clubCircle">
                 <div class="row">
-                    <div class="col-md-3">
-                        <img src="{{ MEDIA_URL }}kushion.jpg" alt="Kushion">
-                    </div>
+                    {% for popular in clubs %}
+                        <div class="col-md-3">
+                            <img src="{{ MEDIA_URL }}{{ popular.name }}.jpg" onclick="openModal();currentSlide(x)"
+                                 class="hover-shadow" alt="Popular clubs at the moment">
 
-                    <div class="col-md-3">
-                        <img src="{{ MEDIA_URL }}subclub.jpg" alt="Subclub">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="{{ MEDIA_URL }}mango.jpg" alt="Mango">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="{{ MEDIA_URL }}garage.jpg" alt="Garage">
-                    </div>
+                            <h4 style="text-align: center" class="modal-footer">{{ popular.name }}</h4>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
-            <script type="text/javascript">
-                switch (new Date().getDay()) {
-                    case 0:
-                        var sun1 = document.createElement("IMG");
-                        sun1.src = "{{ MEDIA_URL }}subclub.jpg";
-                        sun1.alt = "subclub";
-                        document.getElementById('first').appendChild(sun1);
-                        document.getElementById('cap1').innerHTML = "Subclub Sundays";
-                        var sun2 = document.createElement("IMG");
-                        sun2.src = "{{ MEDIA_URL }}bamboo.jpg";
-                        sun2.alt = "bamboo";
-                        document.getElementById('second').appendChild(sun2);
-                        document.getElementById('cap2').innerHTML = "Disco Badger";
-                        var m3 = document.createElement("IMG");
-                        sun3.src = "{{ MEDIA_URL }}lacheetah.jpg";
-                        sun3.alt = "lacheetah";
-                        document.getElementById('third').appendChild(sun3);
-                        break;
+        {% endif %}
+    </div>
 
-                    case 1:
-                        var mon1 = document.createElement("IMG");
-                        mon1.src = "{{ MEDIA_URL }}viper.jpg";
-                        mon1.alt = "viper";
-                        document.getElementById('first').appendChild(mon1);
-                        document.getElementById('cap1').innerHTML = "Monday Night Heat";
+<div class="container">
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            {% for popular in clubs %}
+                <div class="mySlides">
+                    <div class="numbertext"></div>
+                    <img src="{{ MEDIA_URL }}{{ popular.name }}.jpg" style="width:100%">
+                </div>
+            {% endfor %}
 
-                        var mon2 = document.createElement("IMG");
-                        mon2.src = "{{ MEDIA_URL }}kokomo.jpg";
-                        mon2.alt = "kokomo";
-                        document.getElementById('second').appendChild(mon2);
-                        document.getElementById('cap2').innerHTML = "Mile High Monday";
-
-                        var mon3 = document.createElement("IMG");
-                        mon3.src = "{{ MEDIA_URL }}polo.jpg";
-                        mon3.alt = "polo";
-                        document.getElementById('third').appendChild(mon3);
-                        document.getElementById('cap3').innerHTML = "Back Door";
-                        break;
-
-                    case 2:
-                        var tues1 = document.createElement("IMG");
-                        tues1.src = "{{ MEDIA_URL }}kushion.jpg";
-                        tues1.alt = "kushion";
-                        document.getElementById('first').appendChild(tues1);
-                        document.getElementById('cap1').innerHTML = "Juicy Tuesday";
-
-                        var tues2 = document.createElement("IMG");
-                        tues2.src = "{{ MEDIA_URL }}subclub.jpg";
-                        tues2.alt = "subclub";
-                        document.getElementById('second').appendChild(tues2);
-                        document.getElementById('cap2').innerHTML = "I AM";
-
-                        var tues3 = document.createElement("IMG");
-                        tues3.src = "{{ MEDIA_URL }}polo.jpg";
-                        tues3.alt = "polo";
-                        document.getElementById('third').appendChild(tues3);
-                        document.getElementById('cap3').innerHTML = "Text Me";
-                        break;
-
-                    case 3:
-                        var wed1 = document.createElement("IMG");
-                        wed1.src = "{{ MEDIA_URL }}shimmy.jpg";
-                        wed1.alt = "shimmy";
-                        document.getElementById('first').appendChild(wed1);
-                        document.getElementById('cap1').innerHTML = "No Way Wednesdays";
-
-                        var wed2 = document.createElement("IMG");
-                        wed2.src = "{{ MEDIA_URL }}bamboo.jpg";
-                        wed2.alt = "bamboo";
-                        document.getElementById('second').appendChild(wed2);
-                        document.getElementById('cap2').innerHTML = "W N B";
-
-                        var wed3 = document.createElement("IMG");
-                        wed3.src = "{{ MEDIA_URL }}cathouse.jpg";
-                        wed3.alt = "cathouse";
-                        document.getElementById('third').appendChild(wed3);
-                        document.getElementById('cap3').innerHTML = "Beast Wednesdays";
-                        break;
-
-                    case 4:
-                        var thurs1 = document.createElement("IMG");
-                        thurs1.src = "{{ MEDIA_URL }}hive.jpg";
-                        thurs1.alt = "hive";
-                        document.getElementById('first').appendChild(thurs1);
-                        document.getElementById('cap1').innerHTML = "Hive Thursdays";
-
-                        var thurs2 = document.createElement("IMG");
-                        thurs2.src = "{{ MEDIA_URL }}garage2.jpg";
-                        thurs2.alt = "garage";
-                        document.getElementById('second').appendChild(thurs2);
-                        document.getElementById('cap2').innerHTML = "Element Thursdays";
-
-                        var thurs3 = document.createElement("IMG");
-                        thurs3.src = "{{ MEDIA_URL }}kokomoclub.jpg";
-                        thurs3.alt = "kokomo";
-                        document.getElementById('third').appendChild(thurs3);
-                        document.getElementById('cap3').innerHTML = "Party Monster";
-                        break;
-
-                    case 5:
-                        var fri1 = document.createElement("IMG");
-                        fri1.src = "{{ MEDIA_URL }}kushionQueue.jpg";
-                        fri1.alt = "kushion";
-                        document.getElementById('first').appendChild(fri1);
-                        document.getElementById('cap1').innerHTML = "Milk Fridays";
-
-                        var fri2 = document.createElement("IMG");
-                        fri2.src = "{{ MEDIA_URL }}bamboo.jpg";
-                        fri2.alt = "bamboo";
-                        document.getElementById('second').appendChild(fri2);
-                        document.getElementById('cap2').innerHTML = "Get Loose Fridays";
-
-                        var fri3 = document.createElement("IMG");
-                        fri3.src = "{{ MEDIA_URL }}viper.jpg";
-                        fri3.alt = "viper";
-                        document.getElementById('third').appendChild(fri3);
-                        document.getElementById('cap3').innerHTML = "FOMO";
-                        break;
-
-                    case 6:
-                        var sat1 = document.createElement("IMG");
-                        sat1.src = "{{ MEDIA_URL }}subclub.jpg";
-                        sat1.alt = "subclub";
-                        document.getElementById('first').appendChild(sat1);
-                        document.getElementById('cap1').innerHTML = "Subculture";
-
-                        var sat2 = document.createElement("IMG");
-                        sat2.src = "{{ MEDIA_URL }}hive.jpg";
-                        sat2.alt = "hive";
-                        document.getElementById('second').appendChild(sat2);
-                        document.getElementById('cap2').innerHTML = "Switch Saturdays";
-
-                        var sat3 = document.createElement("IMG");
-                        sat3.src = "{{ MEDIA_URL }}garage.jpg";
-                        sat3.alt = "garage";
-                        document.getElementById('third').appendChild(sat3);
-                        document.getElementById('cap3').innerHTML = "I <3 Garage Saturdays";
-                }
-
-                switch (new Date().getDay()) {
-                    case 0:
-                        document.getElementById('carousel-header').innerHTML = "Check out the biggest nights for Sunday!";
-                        break;
-                    case 1:
-                        document.getElementById('carousel-header').innerHTML = "Check out the biggest nights for Monday!";
-                        break;
-                    case 2:
-                        document.getElementById('carousel-header').innerHTML = "Check out the biggest nights for Tuesday!";
-                        break;
-                    case 3:
-                        document.getElementById('carousel-header').innerHTML = "Check out the biggest nights for Wednesday!";
-                        break;
-                    case 4:
-                        document.getElementById('carousel-header').innerHTML = "Check out the biggest nights for Thursday!";
-                        break;
-                    case 5:
-                        document.getElementById('carousel-header').innerHTML = "Check out the biggest nights for Friday!";
-                        break;
-                    case 6:
-                        document.getElementById('carousel-header').innerHTML = "Check out the biggest nights for Saturday!";
-                }
-            </script>
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+    </div>
+    <!-- Caption text -->
+
+
+</div>
+    <br>
+    <script type="text/javascript">
+        switch (new Date().getDay()) {
+            case 0:
+                var sun1 = document.createElement("IMG");
+                sun1.src = "{{ MEDIA_URL }}subclub.jpg";
+                sun1.alt = "subclub";
+                document.getElementById('first').appendChild(sun1);
+                document.getElementById('cap1').innerHTML = "Subclub Sundays";
+                var sun2 = document.createElement("IMG");
+                sun2.src = "{{ MEDIA_URL }}bamboo.jpg";
+                sun2.alt = "bamboo";
+                document.getElementById('second').appendChild(sun2);
+                document.getElementById('cap2').innerHTML = "Disco Badger";
+                var m3 = document.createElement("IMG");
+                sun3.src = "{{ MEDIA_URL }}lacheetah.jpg";
+                sun3.alt = "lacheetah";
+                document.getElementById('third').appendChild(sun3);
+                break;
+
+            case 1:
+                var mon1 = document.createElement("IMG");
+                mon1.src = "{{ MEDIA_URL }}viper.jpg";
+                mon1.alt = "viper";
+                document.getElementById('first').appendChild(mon1);
+                document.getElementById('cap1').innerHTML = "Monday Night Heat";
+
+                var mon2 = document.createElement("IMG");
+                mon2.src = "{{ MEDIA_URL }}kokomo.jpg";
+                mon2.alt = "kokomo";
+                document.getElementById('second').appendChild(mon2);
+                document.getElementById('cap2').innerHTML = "Mile High Monday";
+
+                var mon3 = document.createElement("IMG");
+                mon3.src = "{{ MEDIA_URL }}polo.jpg";
+                mon3.alt = "polo";
+                document.getElementById('third').appendChild(mon3);
+                document.getElementById('cap3').innerHTML = "Back Door";
+                break;
+
+            case 2:
+                var tues1 = document.createElement("IMG");
+                tues1.src = "{{ MEDIA_URL }}kushion.jpg";
+                tues1.alt = "kushion";
+                document.getElementById('first').appendChild(tues1);
+                document.getElementById('cap1').innerHTML = "Juicy Tuesday";
+
+                var tues2 = document.createElement("IMG");
+                tues2.src = "{{ MEDIA_URL }}subclub.jpg";
+                tues2.alt = "subclub";
+                document.getElementById('second').appendChild(tues2);
+                document.getElementById('cap2').innerHTML = "I AM";
+
+                var tues3 = document.createElement("IMG");
+                tues3.src = "{{ MEDIA_URL }}polo.jpg";
+                tues3.alt = "polo";
+                document.getElementById('third').appendChild(tues3);
+                document.getElementById('cap3').innerHTML = "Text Me";
+                break;
+
+            case 3:
+                var wed1 = document.createElement("IMG");
+                wed1.src = "{{ MEDIA_URL }}shimmy.jpg";
+                wed1.alt = "shimmy";
+                document.getElementById('first').appendChild(wed1);
+                document.getElementById('cap1').innerHTML = "No Way Wednesdays";
+
+                var wed2 = document.createElement("IMG");
+                wed2.src = "{{ MEDIA_URL }}bamboo.jpg";
+                wed2.alt = "bamboo";
+                document.getElementById('second').appendChild(wed2);
+                document.getElementById('cap2').innerHTML = "W N B";
+
+                var wed3 = document.createElement("IMG");
+                wed3.src = "{{ MEDIA_URL }}cathouse.jpg";
+                wed3.alt = "cathouse";
+                document.getElementById('third').appendChild(wed3);
+                document.getElementById('cap3').innerHTML = "Beast Wednesdays";
+                break;
+
+            case 4:
+                var thurs1 = document.createElement("IMG");
+                thurs1.src = "{{ MEDIA_URL }}hive.jpg";
+                thurs1.alt = "hive";
+                document.getElementById('first').appendChild(thurs1);
+                document.getElementById('cap1').innerHTML = "Hive Thursdays";
+
+                var thurs2 = document.createElement("IMG");
+                thurs2.src = "{{ MEDIA_URL }}garage2.jpg";
+                thurs2.alt = "garage";
+                document.getElementById('second').appendChild(thurs2);
+                document.getElementById('cap2').innerHTML = "Element Thursdays";
+
+                var thurs3 = document.createElement("IMG");
+                thurs3.src = "{{ MEDIA_URL }}kokomoclub.jpg";
+                thurs3.alt = "kokomo";
+                document.getElementById('third').appendChild(thurs3);
+                document.getElementById('cap3').innerHTML = "Party Monster";
+                break;
+
+            case 5:
+                var fri1 = document.createElement("IMG");
+                fri1.src = "{{ MEDIA_URL }}kushionQueue.jpg";
+                fri1.alt = "kushion";
+                document.getElementById('first').appendChild(fri1);
+                document.getElementById('cap1').innerHTML = "Milk Fridays";
+
+                var fri2 = document.createElement("IMG");
+                fri2.src = "{{ MEDIA_URL }}bamboo.jpg";
+                fri2.alt = "bamboo";
+                document.getElementById('second').appendChild(fri2);
+                document.getElementById('cap2').innerHTML = "Get Loose Fridays";
+
+                var fri3 = document.createElement("IMG");
+                fri3.src = "{{ MEDIA_URL }}viper.jpg";
+                fri3.alt = "viper";
+                document.getElementById('third').appendChild(fri3);
+                document.getElementById('cap3').innerHTML = "FOMO";
+                break;
+
+            case 6:
+                var sat1 = document.createElement("IMG");
+                sat1.src = "{{ MEDIA_URL }}subclub.jpg";
+                sat1.alt = "subclub";
+                document.getElementById('first').appendChild(sat1);
+                document.getElementById('cap1').innerHTML = "Subculture";
+
+                var sat2 = document.createElement("IMG");
+                sat2.src = "{{ MEDIA_URL }}hive.jpg";
+                sat2.alt = "hive";
+                document.getElementById('second').appendChild(sat2);
+                document.getElementById('cap2').innerHTML = "Switch Saturdays";
+
+                var sat3 = document.createElement("IMG");
+                sat3.src = "{{ MEDIA_URL }}garage.jpg";
+                sat3.alt = "garage";
+                document.getElementById('third').appendChild(sat3);
+                document.getElementById('cap3').innerHTML = "I <3 Garage Saturdays";
+        }
+
+        switch (new Date().getDay()) {
+            case 0:
+                document.getElementById('carousel-header').innerHTML = "Check out the biggest nights for Sunday!";
+                break;
+            case 1:
+                document.getElementById('carousel-header').innerHTML = "Check out the biggest nights for Monday!";
+                break;
+            case 2:
+                document.getElementById('carousel-header').innerHTML = "Check out the biggest nights for Tuesday!";
+                break;
+            case 3:
+                document.getElementById('carousel-header').innerHTML = "Check out the biggest nights for Wednesday!";
+                break;
+            case 4:
+                document.getElementById('carousel-header').innerHTML = "Check out the biggest nights for Thursday!";
+                break;
+            case 5:
+                document.getElementById('carousel-header').innerHTML = "Check out the biggest nights for Friday!";
+                break;
+            case 6:
+                document.getElementById('carousel-header').innerHTML = "Check out the biggest nights for Saturday!";
+        }
+    </script>
+    <script>
+        var x = 0;
+        for (var i = 0; i < 4; i++) {
+            var x = x + 1;
+        }
+    </script>
+
+    <script>
+        var y = 0;
+        for (var j = 0; j < 4; j++) {
+            var y = y + j;
+        }
+    </script>
+    </div>
     </div>
 
 {% endblock %}
-
-
-
-

@@ -4,6 +4,8 @@ from django.core.urlresolvers import reverse
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
+from gcn.models import Club
+from gcn.models import Night
 
 from gcn.forms import UserForm, UserProfileForm
 
@@ -14,7 +16,14 @@ from gcn.forms import UserForm, UserProfileForm
 
 
 def home(request):
-    return render(request, 'glasgowclubnights/home.html')
+
+    club_rating_list = Club.objects.order_by('-club_rating')[:4]
+
+    context_dict = {'clubs': club_rating_list}
+
+    response = render(request, 'glasgowclubnights/home.html', context = context_dict)
+
+    return response
 
 
 def about_us(request):
