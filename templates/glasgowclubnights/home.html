@@ -118,6 +118,8 @@
         </div>
     </section>
 
+
+
     <div class="container">
         <h2 style="text-align:center">Top-rated Clubs</h2>
         {% if clubs %}
@@ -154,8 +156,6 @@
         </div>
     </div>
     <!-- Caption text -->
-
-
 </div>
     <br>
     <script type="text/javascript">
@@ -185,7 +185,7 @@
                 document.getElementById('cap1').innerHTML = "Monday Night Heat";
 
                 var mon2 = document.createElement("IMG");
-                mon2.src = "{{ MEDIA_URL }}kokomo.jpg";
+                mon2.src = "{{ MEDIA_URL }}kokomo1.jpg";
                 mon2.alt = "kokomo";
                 document.getElementById('second').appendChild(mon2);
                 document.getElementById('cap2').innerHTML = "Mile High Monday";
@@ -208,13 +208,13 @@
                 tues2.src = "{{ MEDIA_URL }}subclub.jpg";
                 tues2.alt = "subclub";
                 document.getElementById('second').appendChild(tues2);
-                document.getElementById('cap2').innerHTML = "I AM";
+                document.getElementById('cap2').innerHTML = "I AM @ Subclub";
 
                 var tues3 = document.createElement("IMG");
                 tues3.src = "{{ MEDIA_URL }}polo.jpg";
                 tues3.alt = "polo";
                 document.getElementById('third').appendChild(tues3);
-                document.getElementById('cap3').innerHTML = "Text Me";
+                document.getElementById('cap3').innerHTML = "Text Me Tuesdays";
                 break;
 
             case 3:
@@ -297,6 +297,8 @@
                 document.getElementById('cap3').innerHTML = "I <3 Garage Saturdays";
         }
 
+
+
         switch (new Date().getDay()) {
             case 0:
                 document.getElementById('carousel-header').innerHTML = "Check out the biggest nights for Sunday!";
@@ -333,7 +335,5 @@
             var y = y + j;
         }
     </script>
-    </div>
-    </div>
 
 {% endblock %}

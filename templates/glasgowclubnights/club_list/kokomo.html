@@ -1,72 +1,158 @@
 {% extends 'glasgowclubnights/club_base.html' %}
 {% load staticfiles %}
 {% block body_block %}
-    <header class="masthead">
-        <div class="container">
+    <div class="container-full">
+        <header class="masthead">
 
-            <div class="row">
-                <div class="col-md-3">
-                </div>
+            <div class="container">
 
-                <div class="col-md-6">
-                    <p style="text-align: center;"><img src="{{ MEDIA_URL }}kokomologo.png" class="img-circle"
-                                                        class="img-responsive" alt="kokomo" style="width:45%"></p>
-                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                    </div>
 
-                <div class="col-md-3">
+                    <div class="col-md-6">
+                        <p style="text-align: center;"><img src="{{ MEDIA_URL }}kokomologo.png" class="img-rectangle"
+                                                            class="img-responsive" alt="Kokomologo" width="220" height="220"></p>
+                    </div>
+
+                    <div class="col-md-3">
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
 
-        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p style="text-align: center;"><a href="https://www.facebook.com/KokomoGlasgow/"
+                                                          class="btn btn-default btn-lg"><i
+                                class="fa fa-facebook"> <span
+                                class="network-name">Facebook</span></i></a>
+                    </div>
 
-            <div class="row">
-                <div class="col-md-2">
+                    <div class="col-md-4">
+                        <p style="text-align: center;"><a href="https://twitter.com/kokomoglasgow?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                                                          class="btn btn-default btn-lg"><i
+                                class="fa fa-twitter"> <span
+                                class="network-name">Twitter</span></i></a>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <p style="text-align: center;"><a href="https://www.instagram.com/kokomo_glasgow/?hl=en"
+                                                          class="btn btn-default btn-lg"><i
+                                class="fa fa-instagram"> <span
+                                class="network-name">Instagram</span></i></a>
+                    </div>
+                    <p></p>
 
                 </div>
 
-                <div class="col-md-8">
-                    <div class="thumbnail">
-                        <img src="{{ MEDIA_URL }}kokomo.jpg" alt="kokomo" class="img-responsive">
+            </div>
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <img src="{{ MEDIA_URL }}kokomo1.jpg" alt="Kokomo" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="infoBackground">
+                            <div class="col-md-6">
+                                <h1 style="color: white;"> Kokomo Night Club</h1>
+                                <h4 style="color: white;">>
+                                    KOKOMO is a 2 room nightclub at the heart of Glasgow’s vibrant nightlife scene and is first choice for Glasgow party goers every Monday, Thursday, Friday & Saturday.
+                                </h4>
+                                <h4 style="color: white;">>
+                                    Every night Kokomo is open, they offer amazing drinks promos with music from the best DJ’s in the city. KOKOMO is the perfect place to dance,
+                                    drink and have fun with the club boasting a state of the art sound and lighting system to make every night you have with us unforgettable.
+                                </h4>
+                                <h4 style="color: white;">>
+                                   The attention to detail in design of the club is just as apparent in the service. Friendly staff, great promos and good times are our bywords.
+                                    Simply put, KOKOMO is conceived to have the DNA of another simple three-letter word, FUN.
+                                </h4>
+
+
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                                        data-target="#myModal">
+                                    Opening Hours
+                                </button>
+
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;
+                                                </button>
+                                                <h4 class="modal-title">Kokomo Opening Hours</h4>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <p>Weekly</p>
+                                                <table class="table">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Day</th>
+                                                        <th>Opens at</th>
+                                                        <th>Closes at</th>
+
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>Monday</td>
+                                                        <td>11.00pm</td>
+                                                        <td>03.00am</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Thursday</td>
+                                                        <td>10.30pm</td>
+                                                        <td>03.00am</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Friday</td>
+                                                        <td>10.00pm</td>
+                                                        <td>03.00am</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Saturday</td>
+                                                        <td>10.00pm</td>
+                                                        <td>03.00am</td>
+
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-md-2">
-
-                </div>
             </div>
 
-        </div>
+        </header>
 
-        <br>
-        <br>
-
-        <div class=container">
-            <div class="row">
-                <div class="col-md-1">
-                </div>
-
-                <div class="col-md-5">
-                    <img src="{{ MEDIA_URL }}kokomo.jpg" alt="kokomo" class="img-responsive">
-                </div>
-
-                <div class="col-md-5">
-                    <img src="{{ MEDIA_URL }}kokomo.jpg" alt="kokomo" class="img-responsive">
-                </div>
-
-                <div class="col-md-1">
-
-                </div>
-            </div>
-        </div>
-
-    </header>
+    </div>
     <div class=container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4478.023405983299!2d-4.261266900711529!3d55.86246335924485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488844209a846457%3A0x4c541901042a5371!2sKokomo+Glasgow!5e0!3m2!1sen!2suk!4v1520427971986"
-                width="100%;" height="50%;" frameborder="0" style="position:absolute;"
-                allowfullscreen></iframe>
+                width="100%;" height="50%;" frameborder="0" style="position:absolute;" allowfullscreen></iframe>
     </div>
+
+
 
 
 {% endblock %}

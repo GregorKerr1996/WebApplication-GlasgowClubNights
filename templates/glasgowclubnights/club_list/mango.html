@@ -1,70 +1,172 @@
 {% extends 'glasgowclubnights/club_base.html' %}
 {% load staticfiles %}
 {% block body_block %}
-    <header class="masthead">
-        <div class="container">
+    <div class="container-full">
+        <header class="masthead">
 
-            <div class="row">
-                <div class="col-md-3">
-                </div>
+            <div class="container">
 
-                <div class="col-md-6">
-                    <p style="text-align: center;"><img src="{{ MEDIA_URL }}mangologo.png" class="img-circle"
-                                                        class="img-responsive" alt="mango" style="width:60%"></p>
-                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                    </div>
 
-                <div class="col-md-3">
+                    <div class="col-md-6">
+                        <p style="text-align: center;"><img src="{{ MEDIA_URL }}mangologo.png" class="img-circle"
+                                                            class="img-responsive" alt="Bamboo"></p>
+                    </div>
+
+                    <div class="col-md-3">
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
 
-        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p style="text-align: center;"><a href="https://www.facebook.com/mangolatino/"
+                                                          class="btn btn-default btn-lg"><i
+                                class="fa fa-facebook"> <span
+                                class="network-name">Facebook</span></i></a>
+                    </div>
 
-            <div class="row">
-                <div class="col-md-2">
+                    <div class="col-md-4">
+                        <p style="text-align: center;"><a href="https://twitter.com/mangoglasgow"
+                                                          class="btn btn-default btn-lg"><i
+                                class="fa fa-twitter"> <span
+                                class="network-name">Twitter</span></i></a>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <p style="text-align: center;"><a href="https://www.instagram.com/glasgowmango/"
+                                                          class="btn btn-default btn-lg"><i
+                                class="fa fa-instagram"> <span
+                                class="network-name">Instagram</span></i></a>
+                    </div>
+                    <p></p>
 
                 </div>
 
-                <div class="col-md-8">
-                    <div class="thumbnail">
-                        <img src="{{ MEDIA_URL }}mango.jpg" alt="mango" class="img-responsive" style="width:50%">
+            </div>
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <img src="{{ MEDIA_URL }}mango.jpg" alt="Bamboo" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="infoBackground">
+                            <div class="col-md-6">
+                                <h1 style="color: white;"> Mango Tropical Bar/Club</h1>
+                                <h4 style="color: white;">>
+                                    Holiday-happy, kitsch and colourful, Mango Tropical Bar & Restaurant brings a sunny
+                                    sweetness to Glasgow!
+                                </h4>
+                                <h4 style="color: white;">>
+                                    Brimming with beats from Latin America and the Caribbean, this three level restaurant-bar and club
+                                    certainly creates a deliciously different night-time music feel showcasing everything from
+                                    reggae and ska to latin and salsa for that ultimate easy-going feel.
+                                </h4>
+                                <h4 style="color: white;">>
+                                    In keeping with the sultry South American theme, Mango Tropical Bar & Restaurant is designed
+                                    with a bright, vibey look, particularly its slap-dash style collage of colourful posters and maps,
+                                    so you'll immediately feel like you've been teleported to a boozy Brazilian barrio.
+                                </h4>
+
+
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                                        data-target="#myModal">
+                                    Opening Hours
+                                </button>
+
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;
+                                                </button>
+                                                <h4 class="modal-title">Mango Opening Hours</h4>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <p>Weekly</p>
+                                                <table class="table">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Day</th>
+                                                        <th>Opens at</th>
+                                                        <th>Closes at</th>
+
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>Monday</td>
+                                                        <td>11.00am</td>
+                                                        <td>03.00am</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tuesday</td>
+                                                        <td>11.00am</td>
+                                                        <td>03.00am</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Wednesday</td>
+                                                        <td>11.00am</td>
+                                                        <td>03.00am</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Thursday</td>
+                                                        <td>11.00am</td>
+                                                        <td>03.00am</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Friday</td>
+                                                        <td>11.00am</td>
+                                                        <td>03.00am</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Saturday</td>
+                                                        <td>11.00am</td>
+                                                        <td>03.00am</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sunday</td>
+                                                        <td>11.00am</td>
+                                                        <td>03.00am</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-md-2">
-
-                </div>
             </div>
 
-        </div>
+        </header>
 
-        <br>
-        <br>
-
-        <div class=container">
-            <div class="row">
-                <div class="col-md-1">
-                </div>
-
-                <div class="col-md-5">
-                    <img src="{{ MEDIA_URL }}mango.jpg" alt="mango" class="img-responsive">
-                </div>
-
-                <div class="col-md-5">
-                    <img src="{{ MEDIA_URL }}mango.jpg" alt="mango" class="img-responsive">
-                </div>
-
-                <div class="col-md-1">
-
-                </div>
-            </div>
-        </div>
-    </header>
+    </div>
     <div class=container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4477.645861544407!2d-4.271582465112291!3d55.86573849999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488844289da8e5a7%3A0x562c161795b2e6e8!2sMango!5e0!3m2!1sen!2suk!4v1520428100492"
                 width="100%;" height="50%;" frameborder="0" style="position:absolute;" allowfullscreen></iframe>
     </div>
+
+
 
 
 {% endblock %}

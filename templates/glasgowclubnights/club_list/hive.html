@@ -1,72 +1,144 @@
 {% extends 'glasgowclubnights/club_base.html' %}
 {% load staticfiles %}
-
 {% block body_block %}
-    <header class="masthead">
-        <div class="container">
+    <div class="container-full">
+        <header class="masthead">
 
-            <div class="row">
-                <div class="col-md-3">
-                </div>
+            <div class="container">
 
-                <div class="col-md-6">
-                    <p style="text-align: center;"><img src="{{ MEDIA_URL }}hive.jpg" class="img-circle"
-                                                        class="img-responsive" alt="hive"></p>
-                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                    </div>
 
-                <div class="col-md-3">
+                    <div class="col-md-6">
+                        <p style="text-align: center;"><img src="{{ MEDIA_URL }}hivelogo.jpg" class="img-rectangle"
+                                                            class="img-responsive" alt="Kokomologo" width="220" height="220"></p>
+                    </div>
+
+                    <div class="col-md-3">
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
 
-        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p style="text-align: center;"><a href="https://www.facebook.com/GUUHive/"
+                                                          class="btn btn-default btn-lg"><i
+                                class="fa fa-facebook"> <span
+                                class="network-name">Facebook</span></i></a>
+                    </div>
 
-            <div class="row">
-                <div class="col-md-2">
+                    <div class="col-md-4">
+                        <p style="text-align: center;"><a href="https://twitter.com/guunion?lang=en"
+                                                          class="btn btn-default btn-lg"><i
+                                class="fa fa-twitter"> <span
+                                class="network-name">Twitter</span></i></a>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <p style="text-align: center;"><a href="http://www.guu.co.uk/instagram"
+                                                          class="btn btn-default btn-lg"><i
+                                class="fa fa-instagram"> <span
+                                class="network-name">Instagram</span></i></a>
+                    </div>
+                    <p></p>
 
                 </div>
 
-                <div class="col-md-8">
-                    <div class="thumbnail">
-                        <img src="{{ MEDIA_URL }}hive.jpg" alt="hive" class="img-responsive">
+            </div>
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <img src="{{ MEDIA_URL }}hive.jpg" alt="Kokomo" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="infoBackground">
+                            <div class="col-md-6">
+                                <h1 style="color: white;"> Hive Night Club</h1>
+                                <h4 style="color: white;">>
+                                    The legend that is the Hive lives on this year as the only place to spend your Thursday night.
+                                    The Hive will offer the best value drinks, a sound system to beat all others in Glasgow
+                                    and incredible visual effects at our purpose built club right in the heart of the West End.
+                                </h4>
+                                <h4 style="color: white;">>
+                                   Complete with Podium and twelve metre long bar, the Union is set to become the ultimate night out for the students of Glasgow open every Thursday and Saturday night.
+                                </h4>
+
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                                        data-target="#myModal">
+                                    Opening Hours
+                                </button>
+
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;
+                                                </button>
+                                                <h4 class="modal-title">Hive Opening Hours</h4>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <p>Weekly</p>
+                                                <table class="table">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Day</th>
+                                                        <th>Opens at</th>
+                                                        <th>Closes at</th>
+
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                    <tr>
+                                                        <td>Thursday</td>
+                                                        <td>10.00pm</td>
+                                                        <td>02.00am</td>
+
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Saturday</td>
+                                                        <td>10.00pm</td>
+                                                        <td>02.00am</td>
+
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-md-2">
-
-                </div>
             </div>
 
-        </div>
+        </header>
 
-        <br>
-        <br>
-
-        <div class=container">
-            <div class="row">
-                <div class="col-md-1">
-                </div>
-
-                <div class="col-md-5">
-                    <img src="{{ MEDIA_URL }}hive.jpg" alt="hive" class="img-responsive">
-                </div>
-
-                <div class="col-md-5">
-                    <img src="{{ MEDIA_URL }}hive.jpg" alt="hive" class="img-responsive">
-                </div>
-
-                <div class="col-md-1">
-
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
-    </header>
+    </div>
     <div class=container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8954.141668975806!2d-4.295446379605311!3d55.870726528675775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488845cd5e3324f1%3A0x40a28a42695f9e77!2sThe+Hive!5e0!3m2!1sen!2suk!4v1520427943944"
                 width="100%;" height="50%;" frameborder="0" style="position:absolute;" allowfullscreen></iframe>
     </div>
+
+
+
 
 {% endblock %}

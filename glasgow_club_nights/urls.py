@@ -25,5 +25,6 @@ from gcn import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.home, name='home'),
-    url(r'^gcn/',include('gcn.urls'))
+    url(r'^gcn/',include('gcn.urls')),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,7 +1,6 @@
-from django.db import models
 from django.contrib import admin
 from django.contrib.auth.models import User
-
+from django.db import models
 
 
 class Club(models.Model):
@@ -13,6 +12,15 @@ class Club(models.Model):
 
 
 class Night(models.Model):
+    club_list = models.ForeignKey(User)
+    night_name = models.CharField(max_length=128)
+    night_day = models.CharField(max_length=128)
+
+    def __str__(self):
+        return self.night_name
+
+
+class NightForm(models.Model):
     club_list = models.ForeignKey(Club)
     night_name = models.CharField(max_length=128)
     night_day = models.CharField(max_length=128)
@@ -29,13 +37,18 @@ class NightAdmin(admin.ModelAdmin):
 class UserForm(models.Model):
     user = models.OneToOneField(User)
 
-
     def __str__(self):
         return self.user.username
+
 
 class UserProfileForm(models.Model):
     website = models.URLField(blank=True)
     picture = models.ImageField(upload_to='profile_images', blank=True)
 
+
 class UserPictureForm(models.Model):
     picture = models.ImageField(upload_to='profile_images', blank=True)
+
+
+class UserReview(models.Model):
+    club_rating = models.IntegerField(default=0)

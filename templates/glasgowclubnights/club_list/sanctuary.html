@@ -1,72 +1,149 @@
 {% extends 'glasgowclubnights/club_base.html' %}
 {% load staticfiles %}
 {% block body_block %}
-    <header class="masthead">
-        <div class="container">
+    <div class="container-full">
+        <header class="masthead">
 
-            <div class="row">
-                <div class="col-md-3">
-                </div>
+            <div class="container">
 
-                <div class="col-md-6">
-                    <p style="text-align: center;"><img src="{{ MEDIA_URL }}thesancturary.jpg" class="img-circle"
-                                                        class="img-responsive" alt="thesancturary"></p>
-                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                    </div>
 
-                <div class="col-md-3">
+                    <div class="col-md-6">
+                        <p style="text-align: center;"><img src="{{ MEDIA_URL }}sanctuary_logo.png" class="img-rectangle"
+                                                            class="img-responsive" alt="Sanctuary"></p>
+                    </div>
+
+                    <div class="col-md-3">
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
 
-        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p style="text-align: center;"><a href="https://www.facebook.com/thesanctuarygla/"
+                                                          class="btn btn-default btn-lg"><i
+                                class="fa fa-facebook"> <span
+                                class="network-name">Facebook</span></i></a>
+                    </div>
 
-            <div class="row">
-                <div class="col-md-2">
+                    <div class="col-md-4">
+                        <p style="text-align: center;"><a href="https://twitter.com/sanctuarygla?lang=en"
+                                                          class="btn btn-default btn-lg"><i
+                                class="fa fa-twitter"> <span
+                                class="network-name">Twitter</span></i></a>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <p style="text-align: center;"><a href="https://www.instagram.com/sanctuarygla/"
+                                                          class="btn btn-default btn-lg"><i
+                                class="fa fa-instagram"> <span
+                                class="network-name">Instagram</span></i></a>
+                    </div>
+                    <p></p>
 
                 </div>
 
-                <div class="col-md-8">
-                    <div class="thumbnail">
-                        <img src="{{ MEDIA_URL }}thesancturary.jpg" alt="thesancturary" class="img-responsive">
+            </div>
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <img src="{{ MEDIA_URL }}thesancturary.jpg" alt="Bamboo" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="infoBackground">
+                            <div class="col-md-6">
+                                <h1 style="color: white;"> The Sanctuary</h1>
+                                <h4 style="color: white;">>
+                                    The Sanctuary gives you an innovative and high-end concept to bring you the perfect clubbing experience.
+                                    The Sanctuary prides itself on bringing you that savoir-faire that you strive for 4 nights a week with our commitment purely
+                                    on you with our team of top DJ’s, staff and exquisite service.
+                                </h4>
+                                    <h4 style="color: white;">>
+                                    Located in the heart of the West End, The Sanctuary provides you with a diverse range of music across our 2 specially designed rooms,
+                                        as well as offering you the opportunity to take in our VIP treatment that brings a different intimate ambiance.
+                                </h4>
+
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                                        data-target="#myModal">
+                                    Opening Hours
+                                </button>
+
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;
+                                                </button>
+                                                <h4 class="modal-title">Sanctuary Opening Hours</h4>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <p>Weekly</p>
+                                                <table class="table">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Day</th>
+                                                        <th>Opens at</th>
+                                                        <th>Closes at</th>
+
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>Wednesday</td>
+                                                        <td>10.30pm</td>
+                                                        <td>2.00am</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Friday</td>
+                                                        <td>11.00pm</td>
+                                                        <td>2.00am</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Saturday</td>
+                                                        <td>10.00am</td>
+                                                        <td>02.00am</td>
+
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-md-2">
-
-                </div>
             </div>
 
-        </div>
-
-        <br>
-        <br>
-
-        <div class=container">
-            <div class="row">
-                <div class="col-md-1">
-                </div>
-
-                <div class="col-md-5">
-                    <img src="{{ MEDIA_URL }}thesancturary.jpg" alt="thesancturary" class="img-responsive">
-                </div>
-
-                <div class="col-md-5">
-                    <img src="{{ MEDIA_URL }}thesancturary.jpg" alt="thesancturary" class="img-responsive">
-                </div>
-
-                <div class="col-md-1">
-
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class=container">
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8954.299518957627!2d-4.297202052966245!3d55.870041917243825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb20a141c11b150c1!2sThe+Sanctuary!5e0!3m2!1sen!2suk!4v1520428186446"
-                width="100%;" height="50%;" frameborder="0" style="position:absolute;"
-                allowfullscreen></iframe>
+        </header>
 
     </div>
+    <div class=container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8954.299518957627!2d-4.297202052966245!3d55.870041917243825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb20a141c11b150c1!2sThe+Sanctuary!5e0!3m2!1sen!2suk!4v1520428186446"
+                width="100%;" height="50%;" frameborder="0" style="position:absolute;" allowfullscreen></iframe>
+    </div>
+
+
+
 
 {% endblock %}

@@ -15,113 +15,121 @@
 
     <br>
     <div class="container">
-        <div class="form-group">
-            <label for="exampleFormControlSelect1">Please Select Club</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>Bamboo</option>
-                <option>Cathouse</option>
-                <option>Firewater</option>
-                <option>Garage</option>
-                <option>Kokomo</option>
-                <option>Kushion</option>
-                <option>La Cheetah</option>
-                <option>Mango</option>
-                <option>Polo</option>
-                <option>Sanctuary</option>
-                <option>Shimmy</option>
-                <option>Subclub</option>
-                <option>SWG3</option>
-                <option>Viper</option>
+        <form action={% url "reviews" %} method="POST">
 
+            <label for="exampleFormControlSelect1">Please Select Club</label>
+            <select>
+                <option selected="selected">Select a Club...</option>
+                <option value="Bamboo">Bamboo</option>
+                <option value="Bamboo">Bamboo</option>
+                <option value="Bamboo">Bamboo</option>
+                <option value="Bamboo">Bamboo</option>
+                <option value="Bamboo">Bamboo</option>
+                <option value="Bamboo">Bamboo</option>
+                <option value="Bamboo">Bamboo</option>
+                <option value="Bamboo">Bamboo</option>
+                <option value="Bamboo">Bamboo</option>
+                <option value="Bamboo">Bamboo</option>
+                <option value="Bamboo">Bamboo</option>
+                <option value="Bamboo">Bamboo</option>
+                <option value="Bamboo">Bamboo</option>
+                <option value="Bamboo">Bamboo</option>
             </select>
-        </div>
+        </form>
+
+    </div>
 
     </div>
     <br>
 
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2">
-
-            </div>
-
-            <h2>Please give this club a rating out of 5
-                <small> Hover and click on a star</small>
-            </h2>
-        </div>
-
+    <form id="make-average">
         <div class="container">
-            <p>
             <div class="row">
-                <div class="col-md-6">
-                    <h4>Value For Money</h4>
-                </div>
-                <div class="col-md-6">
+                <div class="col-md-2">
 
-                    <h3>
-                        <div id="stars" class="starrr"></div>
-                    </h3>
-                    <small>You gave a rating of <span id="count">0</span> star(s)</small>
-
-                    <br>
                 </div>
+
+                <h2>Please give this club a rating out of 5
+                    <small> Hover and click on a star</small>
+                </h2>
             </div>
-            </p>
-            <p>
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>Quality of Music</h4>
-                </div>
-                <div class="col-md-6">
 
-                    <h3>
-                        <div id="stars-existing" class="starrr"></div>
-                    </h3>
-                    <small>You gave a rating of <span id="count-existing">0</span> star(s)</small>
+            <div class="container">
+                <p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Value For Money</h4>
+                    </div>
+                    <div class="col-md-6">
 
-                    <br>
+                        <h3>
+                            <div id="stars" class="starrr" name="one"></div>
+                        </h3>
+                        <small>You gave a rating of <span id="count">0</span> star(s)</small>
+
+                        <br>
+                    </div>
                 </div>
+
+                </p>
+                <p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Quality of Music</h4>
+                    </div>
+                    <div class="col-md-6">
+
+                        <h3>
+                            <div id="stars-existing" class="starrr" name="two"></div>
+                        </h3>
+                        <small>You gave a rating of <span id="count-existing">0</span> star(s)</small>
+
+                        <br>
+                    </div>
+                </div>
+
+                <p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Overall Experience</h4>
+                    </div>
+                    <div class="col-md-6">
+
+                        <h3>
+                            <div id="stars-existing1" class="starrr" name="three"></div>
+                        </h3>
+                        <small>You gave a rating of <span id="count-existing1">0</span> star(s)</small>
+
+                        <br>
+                    </div>
+                </div>
+
             </div>
-            </p>
-            <p>
             <div class="row">
-                <div class="col-md-6">
-                    <h4>Overall Experience</h4>
+                <div class="col-md-4">
+                    <h1><p>Result:<input type="text" name="result"></p></h1>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
 
-                    <h3>
-                        <div id="stars-existing1" class="starrr"></div>
-                    </h3>
-                    <small>You gave a rating of <span id="count-existing1">0</span> star(s)</small>
-
-                    <br>
                 </div>
+                <div class="col-md-4">
+                    <input type="submit" value="Submit">
+                </div>
+
             </div>
 
         </div>
-        <div class="row">
-            <div class="col-md-4">
 
-            </div>
-            <div class="col-md-4">
 
-            </div>
-            <div class="col-md-4">
-                <button class="btn btn-lg btn-primary btn-block" type="submit"
-                        value="Submit"/>
+        <input type="submit" id="additems">
+        <br><br>
 
-            </div>
-
-        </div>
-
-        <br>
-
+    </form>
+    <div id="show-result">
     </div>
 
-
-
+    <br>
 
 
     <script>
@@ -243,6 +251,41 @@
                 $('#count-existing1').html(value);
             });
         });
+
+    </script>
+
+    <script>
+        function makeAverage() {
+            var firstNumber = $("#count").html(value);
+            var secondNumber = $("#count-existing").html(value);
+            var thirdNumber = $("#count-existing1").html(value);
+
+            var average = (parseInt(firstNumber) + parseInt(secondNumber) + parseInt(thirdNumber) / 3);
+
+            print(firstNumber);
+
+            console.log(average);
+            console.log(firstNumber);
+
+            return average;
+        }
+
+
+        function displayAverage(avg) {
+            $("#show-result").text(avg);
+            console.log('avg ' + avg);
+
+        };
+        $('form#make-average').submit(function (e) {
+            e.preventDefault()
+            var avg = makeAverage();
+            displayAverage(avg);
+
+        })
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = parseInt(document.getElementById(firstNumber).value) + parseInt(document.getElementById('second_num').value);
+        }
 
     </script>
 

@@ -6,22 +6,21 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
 from gcn.models import Club
 from gcn.models import Night
+from gcn.models import UserReview
+from gcn.forms import NightForm
+
 
 from gcn.forms import UserForm, UserProfileForm
 
 
 # Create your views here.
 
-
-
-
 def home(request):
-
     club_rating_list = Club.objects.order_by('-club_rating')[:4]
 
     context_dict = {'clubs': club_rating_list}
 
-    response = render(request, 'glasgowclubnights/home.html', context = context_dict)
+    response = render(request, 'glasgowclubnights/home.html', context=context_dict)
 
     return response
 
@@ -155,3 +154,30 @@ def user_login(request):
             return HttpResponse("Invalid login details supplied.")
     else:
         return render(request, 'glasgowclubnights/login.html', {})
+
+
+
+def user_review(request):
+    if request.method == 'POST':
+        form = UserReview(request.POST)
+
+        if form.is_valid():
+            print("You selected" 'value')
+            answer = form.cleaned_data['value']
+
+def add_night(request):
+    form = NightForm()
+
+    if request.method=='POST':
+        form = NightForm(request.POST)
+
+        if form.is_valid():
+            form.save(commit=True)
+
+            return home(request)
+        else:
+            print(form.errors)
+
+    return render(request, 'glasgowclubnights/add_page.html', {'form':form})
+
+
