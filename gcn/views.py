@@ -99,7 +99,12 @@ def kokomo(request):
 
 
 def kushion(request):
-    return render(request, 'glasgowclubnights/club_list/kushion.html')
+    club_name = UserReviewForm.objects.order_by('-club_list')
+    club_rating_list = UserReviewForm.objects.order_by('-club_rating')
+    review_name = UserReviewForm.objects.order_by('-name')
+    context_dict = {'club_name': club_name, 'review_name': review_name, 'club_rating_list': club_rating_list}
+    response = render(request, 'glasgowclubnights/club_list/kushion.html', context=context_dict)
+    return response
 
 
 def la_cheetah(request):
@@ -180,14 +185,13 @@ def reviews(request):
 
         if form.is_valid():
 
-            club_review = form.save(commit=True)
-
+            form.save(commit=True)
 
             return home(request)
         else:
             print(forms.errors)
-
-    return render(request, 'glasgowclubnights/reviews.html', {'form': form})
+    else:
+        return render(request, 'glasgowclubnights/reviews.html', {'reviewform': form})
 
 
 def add_night(request):

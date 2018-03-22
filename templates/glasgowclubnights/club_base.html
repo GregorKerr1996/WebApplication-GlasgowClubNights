@@ -55,7 +55,6 @@
                         <li><a href="{% url 'add_night' %}">Add New Night</a></li>
                         <li><a href="{% url 'about_us' %}">About Us</a></li>
                         <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
                         <li></li>
                         <li style="float:right" class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{ user.username }}
@@ -70,12 +69,13 @@
                     <form class="nav navbar-form navbar-right" action="/action_page.php">
 
 
+                       </ul>
+                    <form class="nav navbar-form navbar-right">
                         <div class="form-group">
-
-                            <input type="text" class="form-control" placeholder="Search.." id="search">
-                            <button type="submit" class="btn btn-default" id="submit">Submit</button>
-
+                            <input type="text" placeholder="Search.." id="search">
+                            <input type="button" onclick="search()" id="submit">Submit</input>
                         </div>
+                    </form>
 
                         </li>
                     </form>
@@ -98,7 +98,7 @@
                         <li><a href="{% url 'reviews' %}">Make a Review</a></li>
                         <li><a href="{% url 'about_us' %}">About Us</a></li>
                         <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+
                         <li></li>
                         <li style="float:right" class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{ user.username }}
@@ -173,6 +173,33 @@
             }
             if (valid === true) {
                 window.location.replace("/gcn/" + filter);
+            } else {
+                window.confirm("Your search has not matched the name of a club in our Repo, please try again.");
+            }
+
+        }
+    </script>
+
+    <script>
+        //Redirects user to relevant page if they correctly search for a club
+        function search() {
+            var input = document.getElementById('search');
+
+            var clubs = new Array("bamboo", "cathouse", "firewater", "garage", "hive", "kokomo", "kushion", "lacheetah", "mango", "polo", "sanctuary", "shimmy", "subclub", "swg3", "viper");
+            var filter = input.value.toLowerCase();
+            var valid = false;
+
+            for (var i = 0; i < clubs.length; i++) {
+                if (clubs[i].valueOf() == filter.valueOf()) {
+                    valid = true;
+                    break;
+
+                } else {
+                    valid = false;
+                }
+            }
+            if (valid === true) {
+                window.location.href = "/gcn/" + filter;
             } else {
                 window.confirm("Your search has not matched the name of a club in our Repo, please try again.");
             }

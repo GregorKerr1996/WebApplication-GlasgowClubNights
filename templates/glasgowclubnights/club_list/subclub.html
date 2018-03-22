@@ -12,7 +12,8 @@
 
                     <div class="col-md-6">
                         <p style="text-align: center;"><img src="{{ MEDIA_URL }}subclublogo.png" class="img-rectangle"
-                                                            class="img-responsive" alt="Subclub" width="220px" height="150px" ></p>
+                                                            class="img-responsive" alt="Subclub" width="220px"
+                                                            height="150px"></p>
                     </div>
 
                     <div class="col-md-3">
@@ -65,91 +66,110 @@
                                     After thirty years of partying in the ‘dear green place’ that is Glasgow,
                                     the Sub Club still resides deep below ground at number 22 Jamaica Street.
                                 </h4>
-                                    <h4 style="color: white;">>
-                                    Week in, week out, you can find the cream of the city’s music makers playing to the best people
-                                        the city can muster on the finest sound system you will hear in Scotland, or pretty much anywhere in the world for that matter.
+                                <h4 style="color: white;">>
+                                    Week in, week out, you can find the cream of the city’s music makers playing to the
+                                    best people
+                                    the city can muster on the finest sound system you will hear in Scotland, or pretty
+                                    much anywhere in the world for that matter.
                                 </h4>
                                 <h4 style="color: white">>
-                                    Joining them are DJs and artists from all corners of the planet, enthused by the reputation that the club,
+                                    Joining them are DJs and artists from all corners of the planet, enthused by the
+                                    reputation that the club,
                                     hand in hand with it’s hedonists, has built over years.
 
                                 </h4>
 
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
-                                        data-target="#myModal">
+                                <button type="button" class="btn btn-info btn-lg" id="hoursbutton">
                                     Opening Hours
                                 </button>
 
-                                <div class="modal fade" id="myModal" role="dialog">
-                                    <div class="modal-dialog">
-
-                                        <!-- Modal content-->
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;
-                                                </button>
-                                                <h4 class="modal-title">Subclub Opening Hours</h4>
-                                            </div>
-                                            <div class="modal-body">
-
-                                                <p>Weekly</p>
-                                                <table class="table">
-                                                    <thead>
-                                                    <tr>
-                                                        <th>Day</th>
-                                                        <th>Opens at</th>
-                                                        <th>Closes at</th>
-
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>Tuesday</td>
-                                                        <td>11.00pm</td>
-                                                        <td>3.00am</td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Thursday</td>
-                                                        <td>11.00pm</td>
-                                                        <td>3.00am</td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Friday</td>
-                                                        <td>11.00pm</td>
-                                                        <td>3.00am</td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Saturday</td>
-                                                        <td>11.00am</td>
-                                                        <td>03.00am</td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Sunday</td>
-                                                        <td>11.00am</td>
-                                                        <td>03.00am</td>
-
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close
-                                                </button>
-                                            </div>
+                                <div class="modal" id="myModal">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Subclub Opening Hours</h4>
                                         </div>
+                                        <div class="modal-body">
 
+                                            <p>Weekly</p>
+                                            <table class="table">
+                                                <thead>
+                                                <tr>
+                                                    <th>Day</th>
+                                                    <th>Opens at</th>
+                                                    <th>Closes at</th>
+
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>Tuesday</td>
+                                                    <td>11.00pm</td>
+                                                    <td>3.00am</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Thursday</td>
+                                                    <td>11.00pm</td>
+                                                    <td>3.00am</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Friday</td>
+                                                    <td>11.00pm</td>
+                                                    <td>3.00am</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Saturday</td>
+                                                    <td>11.00am</td>
+                                                    <td>03.00am</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Sunday</td>
+                                                    <td>11.00am</td>
+                                                    <td>03.00am</td>
+
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
+            <script>
+                // Get the modal
+                var modal = document.getElementById('myModal');
+
+                // Get the button that opens the modal
+                var btn = document.getElementById("hoursbutton");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks the button, open the modal
+                btn.onclick = function () {
+                    modal.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
 
         </header>
 
@@ -157,7 +177,7 @@
     <div class=container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.270847113562!2d-4.259619783758096!3d55.85796708058158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888469ebbcb4e8b%3A0xd17349a6ced097ac!2sSub+Club!5e0!3m2!1sen!2suk!4v1520428288799"
                 width="100%;" height="50%;" frameborder="0" style="position:absolute;" allowfullscreen></iframe>
-                width="100%;" height="50%;" frameborder="0" style="position:absolute;" allowfullscreen></iframe>
+        width="100%;" height="50%;" frameborder="0" style="position:absolute;" allowfullscreen></iframe>
     </div>
 
 

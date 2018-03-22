@@ -34,6 +34,10 @@ class NightAdmin(admin.ModelAdmin):
     list_display = ('night_name', 'club_list')
 
 
+class UserReviewAdmin(admin.ModelAdmin):
+    list_display = ('name', 'club_list', 'club_rating',)
+
+
 class UserForm(models.Model):
     user = models.OneToOneField(User)
 
@@ -49,6 +53,7 @@ class UserProfileForm(models.Model):
 class UserPictureForm(models.Model):
     picture = models.ImageField(upload_to='profile_images', blank=True)
 
+
 class UserReview(models.Model):
     name = models.ForeignKey(to=User)
     club_list = models.ForeignKey(Club)
@@ -56,6 +61,7 @@ class UserReview(models.Model):
 
     def __unicode__(self):
         return self.name
+
 
 class UserReviewForm(models.Model):
     name = models.ForeignKey(to=User)

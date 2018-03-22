@@ -2,20 +2,18 @@
 {% load staticfiles %}
 
 
-
-
-
 {% block body_block %}
 
 
-    <div class="container">
-        <div class="row">
-            <h1>Leave a review</h1>
-        </div>
+<div class="container">
+    <div class="row">
+        <h1>Leave a review</h1>
     </div>
+</div>
 
-    <br>
+<br>
 
+{% block content_block %}
     <div class="container">
 
 
@@ -31,15 +29,7 @@
 
                     {% csrf_token %}
 
-                    {{ form.as_p }}
-
-                    {% for field in form.hidden_fields %}
-                        {{ field.errors }}
-                        {{ field.help_text }}
-                        {{ field }}
-                    {% endfor %}
-
-
+                    {{ reviewform.as_p }}
 
 
                     <input type="submit" name="submit" value="Leave Review"/>
@@ -64,88 +54,15 @@
     <br>
 
 
-    <form id="make-average">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
 
-                </div>
-
-                <h2>Please give this club a rating out of 5
-                    <small> Hover and click on a star</small>
-                </h2>
-            </div>
-
-            <div class="container">
-                <p>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h4>Value For Money</h4>
-                    </div>
-                    <div class="col-md-6">
-
-                        <h3>
-                            <div id="stars" class="starrr" name="one"></div>
-                        </h3>
-                        <small>You gave a rating of <span id="count">0</span> star(s)</small>
-
-                        <br>
-                    </div>
-                </div>
-
-                </p>
-                <p>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h4>Quality of Music</h4>
-                    </div>
-                    <div class="col-md-6">
-
-                        <h3>
-                            <div id="stars-existing" class="starrr" name="two"></div>
-                        </h3>
-                        <small>You gave a rating of <span id="count-existing">0</span> star(s)</small>
-
-                        <br>
-                    </div>
-                </div>
-
-                <p>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h4>Overall Experience</h4>
-                    </div>
-                    <div class="col-md-6">
-
-                        <h3>
-                            <div id="stars-existing1" class="starrr" name="three"></div>
-                        </h3>
-                        <small>You gave a rating of <span id="count-existing1">0</span> star(s)</small>
-
-                        <br>
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-        <!-- <form id="night_form" method="post" action="/gcn/add_night/">
-
-            <input type="submit" name="submit" value="Create Night"/>
-
-        </form> -->
-
-
-        <br><br>
 
     </form>
     <div id="show-result">
     </div>
 
     <br>
+
+   {% endblock %}.
 
 
     <script>

@@ -11,8 +11,9 @@
                     </div>
 
                     <div class="col-md-6">
-                        <p style="text-align: center;"><img src="{{ MEDIA_URL }}hivelogo.jpg" class="img-rectangle"
-                                                            class="img-responsive" alt="Kokomologo" width="220" height="220"></p>
+                        <p style="text-align: center;"><img src="{{ MEDIA_URL }}hivelogo1.jpg" class="img-circle"
+                                                            class="img-responsive" alt="hivelogo" width="50%"
+                                                            height="50%"></p>
                     </div>
 
                     <div class="col-md-3">
@@ -62,33 +63,34 @@
                             <div class="col-md-6">
                                 <h1 style="color: white;"> Hive Night Club</h1>
                                 <h4 style="color: white;">>
-                                    The legend that is the Hive lives on this year as the only place to spend your Thursday night.
-                                    The Hive will offer the best value drinks, a sound system to beat all others in Glasgow
-                                    and incredible visual effects at our purpose built club right in the heart of the West End.
+                                    The legend that is the Hive lives on this year as the only place to spend your
+                                    Thursday night.
+                                    The Hive will offer the best value drinks, a sound system to beat all others in
+                                    Glasgow
+                                    and incredible visual effects at our purpose built club right in the heart of the
+                                    West End.
                                 </h4>
                                 <h4 style="color: white;">>
-                                   Complete with Podium and twelve metre long bar, the Union is set to become the ultimate night out for the students of Glasgow open every Thursday and Saturday night.
+                                    Complete with Podium and twelve metre long bar, the Union is set to become the
+                                    ultimate night out for the students of Glasgow open every Thursday and Saturday
+                                    night.
                                 </h4>
 
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
-                                        data-target="#myModal">
+                                <button type="button" class="btn btn-info btn-lg" id="hoursbutton">
                                     Opening Hours
                                 </button>
 
-                                <div class="modal fade" id="myModal" role="dialog">
-                                    <div class="modal-dialog">
+                                <div class="modal" id="myModal">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Hive Opening Hours</h4>
+                                        </div>
+                                        <div class="modal-body">
 
-                                        <!-- Modal content-->
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;
-                                                </button>
-                                                <h4 class="modal-title">Hive Opening Hours</h4>
-                                            </div>
-                                            <div class="modal-body">
-
-                                                <p>Weekly</p>
-                                                <table class="table">
+                                            <p>Weekly</p>
+                                           <table class="table">
                                                     <thead>
                                                     <tr>
                                                         <th>Day</th>
@@ -114,21 +116,41 @@
                                                     </tr>
                                                     </tbody>
                                                 </table>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close
-                                                </button>
-                                            </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
+            <script>
+                // Get the modal
+                var modal = document.getElementById('myModal');
+
+                // Get the button that opens the modal
+                var btn = document.getElementById("hoursbutton");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks the button, open the modal
+                btn.onclick = function () {
+                    modal.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
 
         </header>
 

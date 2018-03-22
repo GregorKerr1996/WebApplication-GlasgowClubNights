@@ -50,7 +50,6 @@
         </div>
 
         <div class="container">
-
             <div class="row">
                 <div class="col-md-6">
                     <div class="thumbnail">
@@ -58,106 +57,98 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="infoBackground">
-                        <div class="col-md-6">
-                            <h1 style="color: white;"> Kushion Night Club</h1>
-                            <h4 style="color: white;">> Glasgow’s biggest student night! Considered a Tuesday night
-                                institution for students,
-                                with
-                                a
-                                whole weekend worth of fun packed into one night.
+                    <div class="col-md-6">
+                        <h1 style="color: white;"> Kushion Night Club</h1>
+                        <h4 style="color: white;">> Glasgow’s biggest student night! Considered a Tuesday night
+                            institution for students,
+                            with
+                            a
+                            whole weekend worth of fun packed into one night.
 
-                                Cheap drinks, great music and the opposite sex, definitely worth missing lectures
-                                for!
+                            Cheap drinks, great music and the opposite sex, definitely worth missing lectures
+                            for!
 
-                                Keep a look out for weekly events.
+                            Keep a look out for weekly events.
 
-                                Drinks from £1</h4>
-                            <h4 style="color: white;">>
-                                Let your inhibitions go at Loco, our premium student night. Featuring weekly events,
-                                guest
-                                DJs
-                                and midweek booth package offers.
+                            Drinks from £1</h4>
+                        <h4 style="color: white;">>
+                            Let your inhibitions go at Loco, our premium student night. Featuring weekly events,
+                            guest
+                            DJs
+                            and midweek booth package offers.
 
-                                Students Go Free. £1 Drinks
+                            Students Go Free. £1 Drinks
 
-                                Every Thursday
-
-
-                            </h4>
-                            <h4 style="color: white;">
-                                Milk has arrived in Glasgow, it’s good for your bones and even better for your soul.
-
-                                We’ve teamed up with international party starters Milk to bring you the Friday
-                                nights
-                                full
-                                of
-                                house, hip hop, disco and lots of the white stuff.
-
-                                Milkshake cocktails available all night.
+                            Every Thursday
 
 
-                            </h4>
+                        </h4>
+                        <h4 style="color: white;">
+                            Milk has arrived in Glasgow, it’s good for your bones and even better for your soul.
+
+                            We’ve teamed up with international party starters Milk to bring you the Friday
+                            nights
+                            full
+                            of
+                            house, hip hop, disco and lots of the white stuff.
+
+                            Milkshake cocktails available all night.
 
 
-                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
-                                    data-target="#myModal">
-                                Opening Hours
-                            </button>
+                        </h4>
 
-                            <div class="modal fade" id="myModal" role="dialog">
-                                <div class="modal-dialog">
 
-                                    <!-- Modal content-->
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;
-                                            </button>
-                                            <h4 class="modal-title">Kushion Opening Hours</h4>
-                                        </div>
-                                        <div class="modal-body">
+                                <button type="button" class="btn btn-info btn-lg" id="hoursbutton">
+                                    Opening Hours
+                                </button>
 
-                                            <p>Weekly</p>
-                                            <table class="table">
-                                                <thead>
-                                                <tr>
-                                                    <th>Day</th>
-                                                    <th>Opens at</th>
-                                                    <th>Closes at</th>
+                                <div class="modal" id="myModal">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <span class="close">&times;</span>
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Kushion Lounge Opening Hours</h4>
+                                            </div>
+                                            <div class="modal-body">
 
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr>
-                                                    <td>Tuesday</td>
-                                                    <td>10.30</td>
-                                                    <td>03.00</td>
+                                                <p>Weekly</p>
+                                                <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th>Day</th>
+                                                <th>Opens at</th>
+                                                <th>Closes at</th>
 
-                                                </tr>
-                                                <tr>
-                                                    <td>Thursday</td>
-                                                    <td>10.30</td>
-                                                    <td>03.00</td>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Tuesday</td>
+                                                <td>10.30</td>
+                                                <td>03.00</td>
 
-                                                </tr>
-                                                <tr>
-                                                    <td>Friday</td>
-                                                    <td>10.30</td>
-                                                    <td>03.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Thursday</td>
+                                                <td>10.30</td>
+                                                <td>03.00</td>
 
-                                                </tr>
-                                                <tr>
-                                                    <td>Saturday</td>
-                                                    <td>10.30</td>
-                                                    <td>03.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Friday</td>
+                                                <td>10.30</td>
+                                                <td>03.00</td>
 
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close
-                                            </button>
+                                            </tr>
+                                            <tr>
+                                                <td>Saturday</td>
+                                                <td>10.30</td>
+                                                <td>03.00</td>
+
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -165,9 +156,36 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            <script>
+// Get the modal
+var modal = document.getElementById('myModal');
 
-        </div>
+// Get the button that opens the modal
+var btn = document.getElementById("hoursbutton");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
         <div class="container">
             <h2 style="text-align:center; color:white">Club Nights at Kushion</h2>
             <hr>
@@ -185,17 +203,13 @@
                          alt="milk" width="60%" height="60%">
                 </div>
 
-
             </div>
         </div>
 
-
         <div class="container">
-            <h2 style="text-align:center; color:white">Reviews At Kushion</h2>
+            <h2 style="text-align:center; color:white">Kushion Reviews</h2>
             <hr>
             <div class="row">
-                <br>
-                <h4>Kushion Reviews</h4>
                 <div class="col-md-5">
                     <img src="{{ MEDIA_URL }}juicytuesday.png"
                          alt="juicy tuesday" width="50%" height="50%">
@@ -208,16 +222,27 @@
                     <img src="{{ MEDIA_URL }}milkfriday.png"
                          alt="milk" width="60%" height="60%">
                 </div>
+
             </div>
         </div>
     </header>
+    <div class="container">
+        <div class="row">
+
+            {% for review in club_name %}
+                <h3>{{ review.name }} {{ review.club_list }} {{ review.club_rating }}</h3>
+            {% endfor %}
 
 
+        </div>
 
+
+    </div>
+
+    </div>
     <div class=container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4478.383611572899!2d-4.257606775056638!3d55.85933851205186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888469f7a11e4ab%3A0xdcdc027b5e01dc90!2sLa+Cheetah+Club!5e0!3m2!1sen!2suk!4v1520428039891"
                 width="100%;" height="50%;" frameborder="0" style="position:absolute;" allowfullscreen></iframe>
     </div>
-
 
 {% endblock %}
