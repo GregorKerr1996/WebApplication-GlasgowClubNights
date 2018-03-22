@@ -13,6 +13,7 @@ urlpatterns = [
     url(r'^reviews/$', views.reviews, name='reviews'),
     url(r'^register/$', views.register, name='register'),
     url(r'^add_night/$', views.add_night, name='add_night'),
+    url(r'^test/$', views.test, name='test'),
 
     # Url links for club webpages
 

@@ -1,45 +1,66 @@
 {% extends 'glasgowclubnights/main_base.html' %}
 {% load staticfiles %}
-<link rel="stylesheet" type="text/css" href="../../static/home.css">
+
+
 
 
 
 {% block body_block %}
+
+
     <div class="container">
-        <div class="rows">
+        <div class="row">
             <h1>Leave a review</h1>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col-md-4">
+
+
+            </div>
+
+            <div class="col-md-4">
+                <form id="user_review_form" method="post" action="/gcn/reviews/">
+
+
+                    {% csrf_token %}
+
+                    {{ form.as_p }}
+
+                    {% for field in form.hidden_fields %}
+                        {{ field.errors }}
+                        {{ field.help_text }}
+                        {{ field }}
+                    {% endfor %}
+
+
+
+
+                    <input type="submit" name="submit" value="Leave Review"/>
+
+                </form>
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
 
         </div>
 
     </div>
 
-    <br>
-    <div class="container">
-        <form action={% url "reviews" %} method="POST">
 
-            <label for="exampleFormControlSelect1">Please Select Club</label>
-            <select>
-                <option selected="selected">Select a Club...</option>
-                <option value="Bamboo">Bamboo</option>
-                <option value="Bamboo">Bamboo</option>
-                <option value="Bamboo">Bamboo</option>
-                <option value="Bamboo">Bamboo</option>
-                <option value="Bamboo">Bamboo</option>
-                <option value="Bamboo">Bamboo</option>
-                <option value="Bamboo">Bamboo</option>
-                <option value="Bamboo">Bamboo</option>
-                <option value="Bamboo">Bamboo</option>
-                <option value="Bamboo">Bamboo</option>
-                <option value="Bamboo">Bamboo</option>
-                <option value="Bamboo">Bamboo</option>
-                <option value="Bamboo">Bamboo</option>
-                <option value="Bamboo">Bamboo</option>
-            </select>
-        </form>
 
-    </div>
 
-    </div>
+
     <br>
 
 
@@ -106,23 +127,18 @@
                 </div>
 
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h1><p>Result:<input type="text" name="result"></p></h1>
-                </div>
-                <div class="col-md-4">
 
-                </div>
-                <div class="col-md-4">
-                    <input type="submit" value="Submit">
-                </div>
-
-            </div>
 
         </div>
 
 
-        <input type="submit" id="additems">
+        <!-- <form id="night_form" method="post" action="/gcn/add_night/">
+
+            <input type="submit" name="submit" value="Create Night"/>
+
+        </form> -->
+
+
         <br><br>
 
     </form>

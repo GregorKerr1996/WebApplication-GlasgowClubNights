@@ -2,6 +2,7 @@
 <html lang="en">
 {% load staticfiles %}
 {% load gcn_template_tags %}
+
 {% block nav_block %}
     <head>
         <title>Glasgow Club Nights</title>
@@ -10,19 +11,19 @@
         <link rel="stylesheet" type="text/css" href="../../static/club.css">
         <link rel="stylesheet" type="text/css" href="../../static/home.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"
+        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"
               id="bootstrap-css">
 
         <link href="https://fonts.googleapis.com/css?family=Oswald:700|Patua+One|Roboto+Condensed:700" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"
+        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"
               id="bootstrap-css">
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -37,7 +38,7 @@
               rel="stylesheet">
 
 
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
     </head>
     <body>
@@ -52,7 +53,6 @@
                         <li><a href="{% url 'home' %}">Home</a></li>
                         <li><a href="{% url 'club_list' %}">Club List</a></li>
                         <li><a href="{% url 'add_night' %}">Add New Night</a></li>
-                        <li><a href="{% url 'reviews' %}">Make a Review</a></li>
                         <li><a href="{% url 'about_us' %}">About Us</a></li>
                         <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
                         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
@@ -109,17 +109,12 @@
                             </ul>
                         </li>
                     </ul>
-                    <form class="nav navbar-form navbar-right" action="/action_page.php">
 
-
+                    <form class="nav navbar-form navbar-right">
                         <div class="form-group">
-
                             <input type="text" class="form-control" placeholder="Search.." id="search">
-                            <button type="submit" class="btn btn-default" id="submit">Submit</button>
-
+                            <button type="submit" class="btn btn-default" id="submit" onclick="search()">Submit</button>
                         </div>
-
-                        </li>
                     </form>
 
                 </div>
@@ -147,46 +142,41 @@
                     <form class="nav navbar-form navbar-right">
                         <div class="form-group">
                             <input type="text" placeholder="Search.." id="search">
-                            <button onclick="search()" id="submit">Submit</button>
-
+                            <input type="button" onclick="search()" id="submit">Submit</input>
                         </div>
                     </form>
                 </div>
             </nav>
         </section>
-
-
     {% endif %}
 
     <script>
-        //Allows the enter key to work for the search box
-        document.getElementById('search').onkeydown = function (event) {
-            if (event.keyCode == 13) {
-                search();
-            }
-        }
-
         //Redirects user to relevant page if they correctly search for a club
         function search() {
-            var value = document.getElementById('search').value;
-            var clubs = ["bamboo", "cathouse", "firewater", "garage", "hive", "kokomo", "kushion", "lacheetah",
-                "mango", "polo", "sanctuary", "shimmy", "subclub", "swg3", "viper"];
+            var input = document.getElementById('search');
 
-            for (var club in clubs) {
-                if (value == club) {
-                    document.getElementById("test").innerHTML(value + ".html");
-                    //window.location.replace("/club_list/" + value + ".html");
+            var clubs = new Array("bamboo", "cathouse", "firewater", "garage", "hive", "kokomo", "kushion", "lacheetah", "mango", "polo", "sanctuary", "shimmy", "subclub", "swg3", "viper");
+            var filter = input.value.toLowerCase();
+            var valid = false;
+
+            for (var i = 0; i < clubs.length; i++) {
+                if (clubs[i].valueOf() == filter.valueOf()) {
+                    valid = true;
+                    break;
+
+                } else {
+                    valid = false;
                 }
-                else {
-                    window.confirm("Your search has not matched the name of a club in our Repo, please try again.");
-                }
+            }
+            if (valid === true) {
+                window.location.href = "/gcn/" + filter;
+            } else {
+                window.confirm("Your search has not matched the name of a club in our Repo, please try again.");
             }
 
         }
     </script>
 
-    <div id="test">
-    </div>
 {% endblock %}
 
 {% block body_block %}

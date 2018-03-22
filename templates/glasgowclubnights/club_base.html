@@ -1,29 +1,91 @@
 <!DOCTYPE html>
+<html lang="en">
 {% load staticfiles %}
+{% load gcn_template_tags %}
+{% block nav_block %}
+    <head>
+        <title>Glasgow Club Nights</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../../static/club.css">
+        <link rel="stylesheet" type="text/css" href="../../static/home.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"
+              id="bootstrap-css">
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="../../static/club.css">
-<link rel="stylesheet" type="text/css" href="../../static/home.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Oswald:700|Patua+One|Roboto+Condensed:700" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Oswald:700|Patua+One|Roboto+Condensed:700" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:700|Patua+One|Roboto+Condensed:700" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"
+              id="bootstrap-css">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="http://v4-alpha.getbootstrap.com/examples/signin/signin.css"
+              rel="stylesheet">
 
-<head>
-    <title>
-        {% block title_block %}
-            Glasgow Club Nights
-        {% endblock %}
-    </title>
-</head>
-{% if user.is_authenticated %}
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- Add icon for star library -->
+
+
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    </head>
+    <body>
+    {% if request.user|has_group:"Clubs" %}
+        <section id="navbar">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand">Glasgow Club Nights</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'club_list' %}">Club List</a></li>
+                        <li><a href="{% url 'add_night' %}">Add New Night</a></li>
+                        <li><a href="{% url 'about_us' %}">About Us</a></li>
+                        <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                        <li></li>
+                        <li style="float:right" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{ user.username }}
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'logout' %}">Logout</a></li>
+
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="nav navbar-form navbar-right" action="/action_page.php">
+
+
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" placeholder="Search.." id="search">
+                            <button type="submit" class="btn btn-default" id="submit">Submit</button>
+
+                        </div>
+
+                        </li>
+                    </form>
+
+                </div>
+            </nav>
+        </section>
+
+
+    {% elif user.is_authenticated %}
         <section id="navbar">
             <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
@@ -36,26 +98,30 @@
                         <li><a href="{% url 'reviews' %}">Make a Review</a></li>
                         <li><a href="{% url 'about_us' %}">About Us</a></li>
                         <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
-                        <li><a href="{% url 'logout' %}">Logout</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                        <li></li>
+                        <li style="float:right" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{ user.username }}
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'logout' %}">Logout</a></li>
 
-                        <li> {{ user.username }}</li>
+                            </ul>
+                        </li>
                     </ul>
-                    <form class="nav navbar-form navbar-right" action="/action_page.php">
+
+                    <form class="nav navbar-form navbar-right">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search..">
-                            <button type="submit" class="btn btn-default">Submit</button>
+                            <input type="text" class="form-control" placeholder="Search.." id="search">
+                            <button type="submit" class="btn btn-default" id="submit" onclick="search()">Submit</button>
                         </div>
-
-
                     </form>
+
                 </div>
-
-
             </nav>
         </section>
 
     {% else %}
-
         <section id="navbar">
             <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
@@ -71,11 +137,13 @@
                         <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
                         <li> {{ user.username }}</li>
 
+
                     </ul>
                     <form class="nav navbar-form navbar-right">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search..">
-                            <button type="submit" class="btn btn-default">Submit</button>
+                            <input type="text" placeholder="Search.." id="search">
+                            <button onclick="search()" id="submit">Submit</button>
+
                         </div>
                     </form>
                 </div>
@@ -85,6 +153,35 @@
 
     {% endif %}
 
-{% block body_block %}
+    <script>
+        //Redirects user to relevant page if they correctly search for a club
+        function search() {
+            var input = document.getElementById('search');
+
+            var clubs = new Array("bamboo", "cathouse", "firewater", "garage", "hive", "kokomo", "kushion", "lacheetah", "mango", "polo", "sanctuary", "shimmy", "subclub", "swg3", "viper");
+            var filter = input.value.toLowerCase();
+            var valid = false;
+
+            for (var i = 0; i < clubs.length; i++) {
+                if (clubs[i].valueOf() == filter.valueOf()) {
+                    valid = true;
+                    break;
+
+                } else {
+                    valid = false;
+                }
+            }
+            if (valid === true) {
+                window.location.replace("/gcn/" + filter);
+            } else {
+                window.confirm("Your search has not matched the name of a club in our Repo, please try again.");
+            }
+
+        }
+    </script>
+
 {% endblock %}
-</html>
+
+{% block body_block %}
+
+{% endblock %}

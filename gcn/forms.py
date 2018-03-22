@@ -3,7 +3,7 @@ from django import template
 from django.contrib.auth.models import User, Group
 from gcn.models import Club, Night, NightForm
 
-from gcn.models import Club, Night, NightAdmin, UserForm, UserProfileForm, UserPictureForm, UserReview
+from gcn.models import Club, Night, NightAdmin, UserForm, UserProfileForm, UserPictureForm, UserReviewForm, UserReview
 
 
 class UserForm(forms.ModelForm):
@@ -26,10 +26,15 @@ class UserPictureForm(forms.ModelForm):
         fields = ('picture',)
 
 
-class UserReview(forms.ModelForm):
+
+class UserReviewForm(forms.ModelForm):
+    name = UserForm
+    club_list = UserReview
+    club_rating = forms.IntegerField(max_value = 5, help_text="Enter the rating.")
+
     class Meta:
-        model = Club
-        fields = ('club_rating',)
+        model = UserReview
+        fields=('name','club_list', 'club_rating')
 
 
 class NightForm(forms.ModelForm):
@@ -40,5 +45,5 @@ class NightForm(forms.ModelForm):
     class Meta:
         model = Night
         fields = ('club_list', 'night_name', 'night_day')
-        
+
 

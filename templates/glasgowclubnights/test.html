@@ -1,0 +1,56 @@
+{% extends 'glasgowclubnights/main_base.html' %}
+{% load staticfiles %}
+
+
+
+
+
+{% block body_block %}
+
+
+    <div class="container">
+        <div class="row">
+            <h1>Leave a review</h1>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col-md-4">
+
+
+            </div>
+
+            <div class="col-md-4">
+                <form id="review_form" method="post" action="/gcn/reviews/">
+
+
+                    {% csrf_token %}
+
+                    {{ review_form.as_p }}
+
+                    {% for field in review_form %}
+                        {{ field.errors }}
+                        {{ field.help_text }}
+                        {{ field }}
+                    {% endfor %}
+
+
+
+
+                    <input type="submit" name="submit" value="Leave Review"/>
+
+                </form>
+            </div>
+
+        </div>
+
+
+
+
+
+{% endblock %}

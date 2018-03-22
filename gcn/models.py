@@ -5,14 +5,14 @@ from django.db import models
 
 class Club(models.Model):
     name = models.CharField(max_length=128, unique=True)
-    club_rating = models.IntegerField(default=0)
+    club_rating = models.BigIntegerField(default=0)
 
     def __str__(self):
         return self.name
 
 
 class Night(models.Model):
-    club_list = models.ForeignKey(User)
+    club_list = models.ForeignKey(Club)
     night_name = models.CharField(max_length=128)
     night_day = models.CharField(max_length=128)
 
@@ -49,6 +49,18 @@ class UserProfileForm(models.Model):
 class UserPictureForm(models.Model):
     picture = models.ImageField(upload_to='profile_images', blank=True)
 
-
 class UserReview(models.Model):
-    club_rating = models.IntegerField(default=0)
+    name = models.ForeignKey(to=User)
+    club_list = models.ForeignKey(Club)
+    club_rating = models.BigIntegerField(default=0)
+
+    def __unicode__(self):
+        return self.name
+
+class UserReviewForm(models.Model):
+    name = models.ForeignKey(to=User)
+    club_list = models.ForeignKey(Club)
+    club_rating = models.BigIntegerField(default=0)
+
+    def __unicode__(self):
+        return self.name

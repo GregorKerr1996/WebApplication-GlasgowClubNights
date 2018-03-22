@@ -6,9 +6,9 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
 from gcn.models import Club
 from gcn.models import Night
-from gcn.models import UserReview
+from gcn.models import UserReviewForm
 from gcn.forms import NightForm
-
+from gcn.models import UserReview
 
 from gcn.forms import UserForm, UserProfileForm
 
@@ -44,10 +44,6 @@ def user_logout(request):
 
     # Take the user back to the homepage.
     return HttpResponseRedirect(reverse('home'))
-
-
-def reviews(request):
-    return render(request, 'glasgowclubnights/reviews.html')
 
 
 def register(request):
@@ -138,6 +134,26 @@ def viper(request):
     return render(request, 'glasgowclubnights/club_list/viper.html')
 
 
+def test(request):
+    form = UserReviewForm()
+
+    if request.method == 'POST':
+        form = UserReviewForm(request.POST)
+
+        if form.is_valid():
+
+            club_review = form.save(commit=True)
+            club_review.name = name
+            club_review.club_rating = club_rating
+            club_review.save()
+
+            return home(request)
+        else:
+            print(forms.errors)
+
+    return render(request, 'glasgowclubnights/test.html', {'user_review_form': form})
+
+
 def user_login(request):
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -156,19 +172,28 @@ def user_login(request):
         return render(request, 'glasgowclubnights/login.html', {})
 
 
+def reviews(request):
+    form = UserReviewForm()
 
-def user_review(request):
     if request.method == 'POST':
-        form = UserReview(request.POST)
+        form = UserReviewForm(request.POST)
 
         if form.is_valid():
-            print("You selected" 'value')
-            answer = form.cleaned_data['value']
+
+            club_review = form.save(commit=True)
+
+
+            return home(request)
+        else:
+            print(forms.errors)
+
+    return render(request, 'glasgowclubnights/reviews.html', {'form': form})
+
 
 def add_night(request):
     form = NightForm()
 
-    if request.method=='POST':
+    if request.method == 'POST':
         form = NightForm(request.POST)
 
         if form.is_valid():
@@ -178,6 +203,4 @@ def add_night(request):
         else:
             print(form.errors)
 
-    return render(request, 'glasgowclubnights/add_page.html', {'form':form})
-
-
+    return render(request, 'glasgowclubnights/add_page.html', {'form': form})
