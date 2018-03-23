@@ -73,6 +73,7 @@
     background-color: white;
 }
 
+
 #navbar li {
     display: block;
     color: white;
@@ -550,18 +551,22 @@ body {
     padding: 0 0.25em;
     background: white;
 }
+
 #cap1 {
     text-decoration: none;
     text-decoration-color: white;
 }
+
 #cap3 {
     text-decoration: none;
     text-decoration-color: white;
 }
+
 #cap2 {
     text-decoration: none;
     text-decoration-color: white;
 }
+
 .carousel-container.item.active {
     height: 100%;
 }
@@ -612,7 +617,7 @@ body {
     max-width: 700px;
 }
 
-.modal.container{
+.modal.container {
     background-size: 100% 100%;
 }
 
@@ -810,7 +815,6 @@ html, body {
     padding: 0;
     margin: 0;
 }
-
 
 #carousel img {
     display: block;

@@ -3,35 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="e466086f-a00f-44bd-84ec-5b2154db8c22" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcn/models.py" afterPath="$PROJECT_DIR$/gcn/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcn/views.py" afterPath="$PROJECT_DIR$/gcn/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/home.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/club_base.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/club_base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/polo.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/polo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/garage.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/garage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/hive.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/hive.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/about_us.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/about_us.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/kokomo.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/kokomo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/reviews.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/reviews.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/firewater.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/firewater.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/kushion.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/kushion.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/la_cheetah.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/la_cheetah.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/add_page.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/add_page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/sanctuary.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/sanctuary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcn/admin.py" afterPath="$PROJECT_DIR$/gcn/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/club.css" afterPath="$PROJECT_DIR$/static/club.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/subclub.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/subclub.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/cathouse.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/cathouse.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/viper.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/viper.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/test.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcn/forms.py" afterPath="$PROJECT_DIR$/gcn/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/glasgow_club_nights/settings.py" afterPath="$PROJECT_DIR$/glasgow_club_nights/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/shimmy.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/shimmy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/home.css" afterPath="$PROJECT_DIR$/static/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/login.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/register.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/home.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/main_base.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/main_base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/bamboo.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/bamboo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/mango.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/club_list/mango.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/home.css" afterPath="$PROJECT_DIR$/static/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/about_us.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/about_us.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/glasgowclubnights/reviews.html" afterPath="$PROJECT_DIR$/templates/glasgowclubnights/reviews.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,8 +42,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gcn/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="476">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -75,60 +55,64 @@
         <entry file="file://$PROJECT_DIR$/gcn/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+              <caret line="12" column="54" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/glasgow_club_nights/urls.py">
+      <file leaf-file-name="kushion.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/club_list/kushion.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gcn/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            <state relative-caret-position="567">
+              <caret line="196" column="21" lean-forward="false" selection-start-line="196" selection-start-column="21" selection-end-line="196" selection-end-column="21" />
               <folding>
-                <marker date="1521736657648" expanded="true" signature="763:861" ph="..." />
-                <marker date="1521736657648" expanded="true" signature="1276:1277" ph="..." />
+                <element signature="e#8472#8492#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kushion.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/club_list/kushion.html">
+      <file leaf-file-name="mango.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/club_list/mango.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="231" column="34" lean-forward="true" selection-start-line="231" selection-start-column="34" selection-end-line="231" selection-end-column="34" />
+            <state relative-caret-position="570">
+              <caret line="180" column="0" lean-forward="false" selection-start-line="180" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reviews.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/reviews.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="207" column="15" lean-forward="true" selection-start-line="207" selection-start-column="15" selection-end-line="207" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-53">
+              <caret line="161" column="39" lean-forward="true" selection-start-line="161" selection-start-column="39" selection-end-line="161" selection-end-column="39" />
               <folding>
-                <marker date="1521741500501" expanded="true" signature="7531:8265" ph="..." />
-                <marker date="1521741500501" expanded="false" signature="7556:7586" ph="..." />
-                <marker date="1521741500501" expanded="true" signature="7661:8250" ph="..." />
-                <marker date="1521741500501" expanded="true" signature="7700:7857" ph="..." />
-                <marker date="1521741500501" expanded="true" signature="7764:7834" ph="..." />
-                <marker date="1521741500501" expanded="true" signature="7896:8045" ph="..." />
-                <marker date="1521741500501" expanded="true" signature="7961:8022" ph="..." />
-                <marker date="1521741500501" expanded="true" signature="8084:8230" ph="..." />
-                <marker date="1521741500501" expanded="true" signature="8146:8207" ph="..." />
-                <marker date="1521741500501" expanded="true" signature="8298:9025" ph="..." />
-                <marker date="1521741500501" expanded="false" signature="8323:8353" ph="..." />
-                <marker date="1521741500501" expanded="true" signature="8421:9010" ph="..." />
-                <marker date="1521741500501" expanded="true" signature="8460:8617" ph="..." />
-                <marker date="1521741500501" expanded="true" signature="8524:8594" ph="..." />
-                <marker date="1521741500501" expanded="true" signature="8656:8805" ph="..." />
-                <marker date="1521741500501" expanded="true" signature="8721:8782" ph="..." />
-                <marker date="1521741500501" expanded="true" signature="8844:8990" ph="..." />
-                <marker date="1521741500501" expanded="true" signature="8906:8967" ph="..." />
-                <marker date="1521741500501" expanded="true" signature="9067:9282" ph="..." />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="539">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding>
+                <marker date="1521812827646" expanded="true" signature="1314:1369" ph="..." />
+                <marker date="1521812827646" expanded="true" signature="1432:1457" ph="..." />
               </folding>
             </state>
           </provider>
@@ -137,72 +121,8 @@
       <file leaf-file-name="main_base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/main_base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="160" column="21" lean-forward="false" selection-start-line="160" selection-start-column="21" selection-end-line="160" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gcn/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="104" column="42" lean-forward="false" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
-              <folding>
-                <element signature="e#0#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="club_base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/club_base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
-              <folding>
-                <marker date="1521738920626" expanded="true" signature="4694:5191" ph="..." />
-                <marker date="1521738920626" expanded="true" signature="4694:5632" ph="..." />
-                <marker date="1521738920626" expanded="true" signature="4694:5651" ph="..." />
-                <marker date="1521738920626" expanded="false" signature="4764:4775" ph="..." />
-                <marker date="1521738920626" expanded="true" signature="4793:5165" ph="..." />
-                <marker date="1521738920626" expanded="true" signature="4881:4964" ph="..." />
-                <marker date="1521738920626" expanded="true" signature="5019:5135" ph="..." />
-                <marker date="1521738920626" expanded="true" signature="5256:5589" ph="..." />
-                <marker date="1521738920626" expanded="true" signature="5305:5561" ph="..." />
-                <marker date="1521738920626" expanded="true" signature="5697:6889" ph="..." />
-                <marker date="1521738920626" expanded="true" signature="5745:6870" ph="..." />
-                <marker date="1521738920626" expanded="true" signature="5791:6851" ph="..." />
-                <marker date="1521738920626" expanded="true" signature="5839:5938" ph="..." />
-                <marker date="1521738920626" expanded="true" signature="6030:6055" ph="..." />
-                <marker date="1521738920626" expanded="true" signature="6553:6828" ph="..." />
-                <marker date="1521738920626" expanded="true" signature="6602:6800" ph="..." />
-                <marker date="1521738920626" expanded="true" signature="6921:7896" ph="..." />
-                <marker date="1521738920626" expanded="true" signature="7027:7883" ph="{...}" />
-                <marker date="1521738920626" expanded="true" signature="7414:7631" ph="{...}" />
-                <marker date="1521738920626" expanded="true" signature="7476:7557" ph="{...}" />
-                <marker date="1521738920626" expanded="true" signature="7563:7617" ph="{...}" />
-                <marker date="1521738920626" expanded="true" signature="7664:7738" ph="{...}" />
-                <marker date="1521738920626" expanded="true" signature="7744:7872" ph="{...}" />
-                <marker date="1521738920626" expanded="true" signature="7910:8883" ph="..." />
-                <marker date="1521738920626" expanded="true" signature="8016:8870" ph="{...}" />
-                <marker date="1521738920626" expanded="true" signature="8403:8620" ph="{...}" />
-                <marker date="1521738920626" expanded="true" signature="8465:8546" ph="{...}" />
-                <marker date="1521738920626" expanded="true" signature="8552:8606" ph="{...}" />
-                <marker date="1521738920626" expanded="true" signature="8653:8725" ph="{...}" />
-                <marker date="1521738920626" expanded="true" signature="8731:8859" ph="{...}" />
-                <marker date="1521738920626" expanded="true" signature="8902:8940" ph="{% block body_block ... %}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="club.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/club.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="81" column="8" lean-forward="false" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+            <state relative-caret-position="-1062">
+              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -211,48 +131,20 @@
       <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1343">
-              <caret line="79" column="1" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
+            <state relative-caret-position="1122">
+              <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gcn/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="104" column="42" lean-forward="false" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
               <folding>
-                <marker date="1521739086994" expanded="true" signature="10267:10288" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="10313:10372" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="10394:10425" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="10453:10494" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="10503:10573" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="10588:10609" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="10647:11084" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="11129:11209" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="11227:11262" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="11302:11462" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="11509:11640" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="11666:11773" ph="..." />
-                <marker date="1521739086994" expanded="true" signature="11677:11720" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="11728:11771" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="11791:11882" ph="..." />
-                <marker date="1521739086994" expanded="true" signature="11802:11837" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="11845:11880" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="11914:12059" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="12088:12156" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="12242:12293" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="12263:12291" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="12310:12333" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="12346:12403" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="12475:12511" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="12549:12741" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="12778:12909" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="12941:13062" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="13091:13159" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="13204:13226" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="13271:13567" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="13621:13670" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="13772:13817" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="13859:13962" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="14002:14099" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="14110:14131" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="14154:14173" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="14192:14216" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="14238:14322" ph="{...}" />
-                <marker date="1521739086994" expanded="true" signature="14335:14387" ph="{...}" />
+                <element signature="e#0#59#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -309,9 +201,7 @@
         <option value="$PROJECT_DIR$/templates/glasgowclubnights/email.php" />
         <option value="$PROJECT_DIR$/templates/glasgowclubnights/contact_us.php" />
         <option value="$PROJECT_DIR$/templates/glasgowclubnights/contact_us.html" />
-        <option value="$PROJECT_DIR$/templates/glasgowclubnights/login.html" />
         <option value="$PROJECT_DIR$/glasgow_club_nights/urls.py" />
-        <option value="$PROJECT_DIR$/templates/glasgowclubnights/register.html" />
         <option value="$PROJECT_DIR$/templates/glasgowclubnights/club_list.html" />
         <option value="$PROJECT_DIR$/templates/glasgowclubnights/temp.html" />
         <option value="$PROJECT_DIR$/gcn/urls.py" />
@@ -322,15 +212,9 @@
         <option value="$PROJECT_DIR$/templates/glasgowclubnights/add_page.html" />
         <option value="$PROJECT_DIR$/gcn/admin.py" />
         <option value="$PROJECT_DIR$/gcn/forms.py" />
-        <option value="$PROJECT_DIR$/templates/glasgowclubnights/about_us.html" />
-        <option value="$PROJECT_DIR$/static/home.css" />
-        <option value="$PROJECT_DIR$/templates/glasgowclubnights/main_base.html" />
-        <option value="$PROJECT_DIR$/templates/glasgowclubnights/home.html" />
-        <option value="$PROJECT_DIR$/templates/glasgowclubnights/reviews.html" />
         <option value="$PROJECT_DIR$/static/club.css" />
         <option value="$PROJECT_DIR$/templates/glasgowclubnights/club_list/polo.html" />
         <option value="$PROJECT_DIR$/templates/glasgowclubnights/club_list/kokomo.html" />
-        <option value="$PROJECT_DIR$/templates/glasgowclubnights/club_list/kushion.html" />
         <option value="$PROJECT_DIR$/templates/glasgowclubnights/club_list/la_cheetah.html" />
         <option value="$PROJECT_DIR$/templates/glasgowclubnights/club_list/mango.html" />
         <option value="$PROJECT_DIR$/templates/glasgowclubnights/club_list/sanctuary.html" />
@@ -344,6 +228,14 @@
         <option value="$PROJECT_DIR$/templates/glasgowclubnights/club_list/hive.html" />
         <option value="$PROJECT_DIR$/gcn/models.py" />
         <option value="$PROJECT_DIR$/gcn/views.py" />
+        <option value="$PROJECT_DIR$/templates/glasgowclubnights/register.html" />
+        <option value="$PROJECT_DIR$/templates/glasgowclubnights/login.html" />
+        <option value="$PROJECT_DIR$/templates/glasgowclubnights/reviews.html" />
+        <option value="$PROJECT_DIR$/templates/glasgowclubnights/home.html" />
+        <option value="$PROJECT_DIR$/templates/glasgowclubnights/about_us.html" />
+        <option value="$PROJECT_DIR$/templates/glasgowclubnights/club_list/kushion.html" />
+        <option value="$PROJECT_DIR$/static/home.css" />
+        <option value="$PROJECT_DIR$/templates/glasgowclubnights/main_base.html" />
       </list>
     </option>
   </component>
@@ -361,8 +253,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="974" />
-    <option name="y" value="47" />
+    <option name="x" value="-76" />
+    <option name="y" value="18" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -384,6 +276,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -428,8 +322,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -522,12 +414,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="974" y="47" width="974" height="1047" extended-state="0" />
+    <frame x="-76" y="18" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26855895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4321503" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11171961" sideWeight="0.50417536" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.107905984" sideWeight="0.50417536" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16132478" sideWeight="0.49582464" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
@@ -541,14 +433,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11171961" sideWeight="0.50417536" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10899471" sideWeight="0.50417536" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16132478" sideWeight="0.49582464" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26855895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32905984" sideWeight="0.49582464" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -623,27 +515,6 @@
     <entry file="file://$PROJECT_DIR$/gcn/migrations/0019_auto_20180321_1123.py" />
     <entry file="file://$PROJECT_DIR$/gcn/migrations/0018_auto_20180320_1630.py" />
     <entry file="file://$PROJECT_DIR$/gcn/migrations/0026_auto_20180321_1227.py" />
-    <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/about_us.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="110" column="84" lean-forward="false" selection-start-line="110" selection-start-column="84" selection-end-line="110" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="58" column="53" lean-forward="true" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gcn/templatetags/gcn_template_tags.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -707,7 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1547">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -755,14 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="320" column="72" lean-forward="true" selection-start-line="320" selection-start-column="72" selection-end-line="320" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/club_base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -798,15 +660,7 @@
             <marker date="1521738920626" expanded="true" signature="8552:8606" ph="{...}" />
             <marker date="1521738920626" expanded="true" signature="8653:8725" ph="{...}" />
             <marker date="1521738920626" expanded="true" signature="8731:8859" ph="{...}" />
-            <marker date="1521738920626" expanded="true" signature="8902:8940" ph="{% block body_block ... %}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/reviews.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -818,54 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="79" column="1" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
-          <folding>
-            <marker date="1521739086994" expanded="true" signature="10267:10288" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="10313:10372" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="10394:10425" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="10453:10494" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="10503:10573" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="10588:10609" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="10647:11084" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="11129:11209" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="11227:11262" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="11302:11462" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="11509:11640" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="11666:11773" ph="..." />
-            <marker date="1521739086994" expanded="true" signature="11677:11720" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="11728:11771" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="11791:11882" ph="..." />
-            <marker date="1521739086994" expanded="true" signature="11802:11837" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="11845:11880" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="11914:12059" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="12088:12156" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="12242:12293" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="12263:12291" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="12310:12333" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="12346:12403" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="12475:12511" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="12549:12741" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="12778:12909" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="12941:13062" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="13091:13159" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="13204:13226" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="13271:13567" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="13621:13670" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="13772:13817" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="13859:13962" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="14002:14099" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="14110:14131" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="14154:14173" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="14192:14216" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="14238:14322" ph="{...}" />
-            <marker date="1521739086994" expanded="true" signature="14335:14387" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/club_list/la_cheetah.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
@@ -873,19 +679,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/club_list/mango.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="95" column="56" lean-forward="true" selection-start-line="95" selection-start-column="56" selection-end-line="95" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/club_list/shimmy.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="99" column="57" lean-forward="true" selection-start-line="99" selection-start-column="57" selection-end-line="99" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -893,7 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="121" column="56" lean-forward="false" selection-start-line="121" selection-start-column="56" selection-end-line="121" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -901,7 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="81" column="99" lean-forward="false" selection-start-line="81" selection-start-column="99" selection-end-line="81" selection-end-column="99" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -909,7 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-529">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -917,7 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="73" column="31" lean-forward="true" selection-start-line="73" selection-start-column="31" selection-end-line="175" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -925,7 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1083">
           <caret line="139" column="56" lean-forward="false" selection-start-line="139" selection-start-column="56" selection-end-line="139" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -933,7 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="97" column="78" lean-forward="false" selection-start-line="97" selection-start-column="78" selection-end-line="97" selection-end-column="78" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -941,7 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="100" column="80" lean-forward="false" selection-start-line="100" selection-start-column="80" selection-end-line="100" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -949,7 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="78" column="81" lean-forward="false" selection-start-line="78" selection-start-column="81" selection-end-line="78" selection-end-column="81" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -957,7 +746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
           <caret line="82" column="74" lean-forward="false" selection-start-line="82" selection-start-column="74" selection-end-line="82" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -965,7 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="87" column="72" lean-forward="false" selection-start-line="87" selection-start-column="72" selection-end-line="87" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -973,61 +760,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-153">
           <caret line="63" column="50" lean-forward="true" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/club_list/kushion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="231" column="34" lean-forward="true" selection-start-line="231" selection-start-column="34" selection-end-line="231" selection-end-column="34" />
-          <folding>
-            <marker date="1521741500501" expanded="true" signature="7531:8265" ph="..." />
-            <marker date="1521741500501" expanded="false" signature="7556:7586" ph="..." />
-            <marker date="1521741500501" expanded="true" signature="7661:8250" ph="..." />
-            <marker date="1521741500501" expanded="true" signature="7700:7857" ph="..." />
-            <marker date="1521741500501" expanded="true" signature="7764:7834" ph="..." />
-            <marker date="1521741500501" expanded="true" signature="7896:8045" ph="..." />
-            <marker date="1521741500501" expanded="true" signature="7961:8022" ph="..." />
-            <marker date="1521741500501" expanded="true" signature="8084:8230" ph="..." />
-            <marker date="1521741500501" expanded="true" signature="8146:8207" ph="..." />
-            <marker date="1521741500501" expanded="true" signature="8298:9025" ph="..." />
-            <marker date="1521741500501" expanded="false" signature="8323:8353" ph="..." />
-            <marker date="1521741500501" expanded="true" signature="8421:9010" ph="..." />
-            <marker date="1521741500501" expanded="true" signature="8460:8617" ph="..." />
-            <marker date="1521741500501" expanded="true" signature="8524:8594" ph="..." />
-            <marker date="1521741500501" expanded="true" signature="8656:8805" ph="..." />
-            <marker date="1521741500501" expanded="true" signature="8721:8782" ph="..." />
-            <marker date="1521741500501" expanded="true" signature="8844:8990" ph="..." />
-            <marker date="1521741500501" expanded="true" signature="8906:8967" ph="..." />
-            <marker date="1521741500501" expanded="true" signature="9067:9282" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/main_base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="160" column="21" lean-forward="false" selection-start-line="160" selection-start-column="21" selection-end-line="160" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gcn/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-          <folding>
-            <marker date="1521736657648" expanded="true" signature="763:861" ph="..." />
-            <marker date="1521736657648" expanded="true" signature="1276:1277" ph="..." />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/glasgow_club_nights/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1035,27 +781,106 @@
     <entry file="file://$PROJECT_DIR$/gcn/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+          <caret line="12" column="54" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcn/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="104" column="42" lean-forward="false" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <marker date="1521812827646" expanded="true" signature="1314:1369" ph="..." />
+            <marker date="1521812827646" expanded="true" signature="1432:1457" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gcn/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="476">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gcn/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/about_us.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="104" column="42" lean-forward="false" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
+        <state relative-caret-position="471">
+          <caret line="77" column="31" lean-forward="false" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/club_list/mango.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="180" column="0" lean-forward="false" selection-start-line="180" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/main_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1062">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="161" column="39" lean-forward="true" selection-start-line="161" selection-start-column="39" selection-end-line="161" selection-end-column="39" />
           <folding>
-            <element signature="e#0#59#0" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/reviews.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="207" column="15" lean-forward="true" selection-start-line="207" selection-start-column="15" selection-end-line="207" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/glasgowclubnights/club_list/kushion.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="196" column="21" lean-forward="false" selection-start-line="196" selection-start-column="21" selection-end-line="196" selection-end-column="21" />
+          <folding>
+            <element signature="e#8472#8492#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -5,64 +5,87 @@
 {% block body_block %}
 
 
-<div class="container">
-    <div class="row">
-        <h1>Leave a review</h1>
-    </div>
-</div>
-
-<br>
-
-{% block content_block %}
     <div class="container">
-
-
         <div class="row">
+            <h1>Leave a review</h1>
+        </div>
+    </div>
+
+    <br>
+
+    {% block content_block %}
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-md-4">
+
+
+                </div>
+
+                <div class="col-md-4">
+                    <form id="user_review_form" method="post" action="/gcn/reviews/">
+
+
+                        {% csrf_token %}
+
+                        {{ reviewform.as_p }}
+
+
+                    </form>
+                </div>
+
+            </div>
+
+
             <div class="col-md-4">
 
 
             </div>
 
-            <div class="col-md-4">
-                <form id="user_review_form" method="post" action="/gcn/reviews/">
+        </div>
 
+        <div class="container">
+            <form method="post" action="/gcn/">
+                {% csrf_token %}
+                <div class="form-group">
 
-                    {% csrf_token %}
+                    <label for="usr">Username:</label>
+                    <input type="text" class="form-control" id="usr">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Club:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
 
-                    {{ reviewform.as_p }}
+                <div class="form-group">
+                    <label for="pwd">Club Rating:</label>
+                    <div class="row lead">
 
-
-                    <input type="submit" name="submit" value="Leave Review"/>
-
-                </form>
-            </div>
-
+                        <div id="stars" class="starrr"></div>
+                        You gave a rating of <span id="count">0</span> star(s)
+                    </div>
+                </div>
+                <input type="submit" name="submit" value="Leave Review"/>
+            </form>
         </div>
 
 
-        <div class="col-md-4">
 
 
+
+        <br>
+
+
+
+
+        </form>
+        <div id="show-result">
         </div>
 
-    </div>
+        <br>
 
-
-
-
-
-    <br>
-
-
-
-
-    </form>
-    <div id="show-result">
-    </div>
-
-    <br>
-
-   {% endblock %}.
+    {% endblock %}.
 
 
     <script>

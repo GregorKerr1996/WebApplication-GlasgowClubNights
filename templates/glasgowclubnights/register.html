@@ -3,88 +3,41 @@
 {% block body_block %}
 
 
-
-    <h1>Register for Glasgow Club Nights</h1>
-    {% if registered %}
-        <strong>Thank you for registering!</strong>
-        <a href="{% url 'home' %}">Return to the homepage.</a><br/>
-    {% else %}
-        <strong>Register here!</strong><br/>
-        <form id="user_form" method="post" action="{% url 'register' %}"
-              enctype="multipart/form-data">
-
-            {% csrf_token %}
-
-            <!-- Display each form -->
-            {{ user_form.as_p }}
-            <hr>
-            <hr>
-            {{ profile_form.as_p }}
-
-            <!-- Provide a button to click to submit the form. -->
-            <input type="submit" name="submit" value="Register"/>
-        </form>
-    {% endif %}
+    <div class="col-md-4">
 
 
-    <div class="col-sm-6">
-        <div class="col-md-6 col-md-offset-3">
-            <div class="panel panel-login">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <a> Register </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <form id="user_form" method="post" action="{% url 'register' %}"
-                                  enctype="multipart/form-data">
-                                <div class="UserForm">
-                                    <input type="text" name="username" id="username"
-                                           tabindex="1"
-                                           class="form-control" placeholder="Username"
-                                           value="">
-                                    <input type="email" name="email" id="email" tabindex="1"
-                                           class="form-control"
-                                           placeholder="Email Address" value="">
-                                    <input type="password" name="password" id="password"
-                                           tabindex="2"
-                                           class="form-control" placeholder="Password">
-                                </div>
-
-                                <form id="user_profile_form" method="post" action="{% url 'register' %}"
-                                      enctype="multipart/form-data">
-                                    <div class="UserProfileForm">
-                                        {% csrf_token %}
-                                        {{ user_profile_form.as_p }}
-
-
-                                    </div>
-                                </form>
-
-                                <form id="user_picture_form" method="post" action="{% url 'register' %}"
-                                      enctype="multipart/form-data">
-                                    <div class="UserPictureForm">
-                                        {% csrf_token %}
-                                        {{ user_picture_form.as_p }}
-
-
-                                        <input type="picture" name="email" id="email" tabindex="1"
-                                               class="form-control">
-
-                                    </div>
-
-                                </form>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
     </div>
+    <div class="col-md-4">
+        <h1>Register for Glasgow Club Nights</h1>
+        {% if registered %}
+            <strong>Thank you for registering!</strong>
+            <a href="{% url 'home' %}">Return to the homepage.</a><br/>
+        {% else %}
+            <strong>Register here!</strong><br/>
+            <form id="user_form" method="post" action="{% url 'register' %}"
+                  enctype="multipart/form-data">
+
+                {% csrf_token %}
+
+                <!-- Display each form -->
+                {{ user_form.as_p }}
+                <hr>
+                <hr>
+                {{ profile_form.as_p }}
+
+                <!-- Provide a button to click to submit the form. -->
+                <input type="submit" name="submit" value="Register"/>
+            </form>
+        {% endif %}
+
+
+    </div>
+    <div class="col-md-4">
+
+
+    </div>
+
+
+
 
 {% endblock %}
