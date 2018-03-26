@@ -41,7 +41,46 @@
         <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     </head>
     <body>
-    {% if request.user|has_group:"Clubs" %}
+
+    {% if user.is_authenticated %}
+        <section id="navbar">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand">Glasgow Club Nights</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'club_list' %}">Club List</a></li>
+                        <li><a href="{% url 'reviews' %}">Make a Review</a></li>
+                        <li><a href="{% url 'about_us' %}">About Us</a></li>
+                        <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+                        <li></li>
+                        <li style="float:right" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{ user.username }}
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'logout' %}">Logout</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <form class="nav navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search.." id="search">
+                            <button type="submit" class="btn btn-default" id="submit" onclick="search()">Submit</button>
+                        </div>
+                    </form>
+
+                </div>
+            </nav>
+        </section>
+
+
+
+
+    {% elif request.user|has_group:"Clubs" %}
         <section id="navbar">
 
             <nav class="navbar navbar-inverse">
@@ -85,41 +124,6 @@
             </nav>
         </section>
 
-
-    {% elif user.is_authenticated %}
-        <section id="navbar">
-            <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand">Glasgow Club Nights</a>
-                    </div>
-                    <ul class="nav navbar-nav">
-                        <li><a href="{% url 'home' %}">Home</a></li>
-                        <li><a href="{% url 'club_list' %}">Club List</a></li>
-                        <li><a href="{% url 'reviews' %}">Make a Review</a></li>
-                        <li><a href="{% url 'about_us' %}">About Us</a></li>
-                        <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
-                        <li></li>
-                        <li style="float:right" class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{ user.username }}
-                                <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{% url 'logout' %}">Logout</a></li>
-
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <form class="nav navbar-form navbar-right">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search.." id="search">
-                            <button type="submit" class="btn btn-default" id="submit" onclick="search()">Submit</button>
-                        </div>
-                    </form>
-
-                </div>
-            </nav>
-        </section>
 
     {% else %}
         <section id="navbar">
