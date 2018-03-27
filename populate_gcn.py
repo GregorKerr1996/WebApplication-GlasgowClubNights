@@ -52,7 +52,7 @@ def populate():
         {"night_name": "Tag Tuesday", "night_day": "Tuesday"},
         {"night_name": "Bare Mondays", "night_day": "Monday"}
     ]
-    
+
     hive = [
         {"night_name": "Switch Saturdays", "night_day": "Saturday"},
         {"night_name": "HIVE Thursday", "night_day": "Thursday"},
@@ -117,14 +117,14 @@ def populate():
         "Subclub": {"club_nights":subclub, "club_rating":4},
         "Sanctuary": {"club_nights": sanctuary, "club_rating":2},
         "Polo": {"club_nights":polo, "club_rating":1},
-        "La Cheetah": {"club_nights":lacheetah, "club_rating":1},
+        "La_Cheetah": {"club_nights":lacheetah, "club_rating":1},
         "Mango": {"club_nights":mango, "club_rating":3},
         "Kokomo": {"club_nights":kokomo, "club_rating":2},
-        "HIVE": {"club_nights":hive, "club_rating":5},
+        "Hive": {"club_nights":hive, "club_rating":5},
         "Firewater": {"club_nights":firewater, "club_rating":0},
         "Garage":{"club_nights":garage, "club_rating":0},
         "Cathouse":{"club_nights":cathouse, "club_rating":0},
-        
+
     }
 
     for club, club_data in clubs.items():

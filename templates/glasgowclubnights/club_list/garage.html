@@ -1,7 +1,7 @@
 {% extends 'glasgowclubnights/club_base.html' %}
 {% load staticfiles %}
 {% block body_block %}
-    <div class="container-full">
+
         <header class="masthead">
 
             <div class="container">
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="infoBackground">
+
                             <div class="col-md-6">
                                 <h1 style="color: white;"> The Garage</h1>
                                 <h4 style="color: white;">>
@@ -176,6 +176,61 @@
                     }
                 }
             </script>
+
+            <div class="container">
+            <h2 style="text-align:center; color:white">Club Nights at Garage</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="{{ MEDIA_URL }}juicytuesday.png"
+                         alt="juicy tuesday" width="50%" height="50%">
+                </div>
+                <div class="col-md-4">
+                    <img src="{{ MEDIA_URL }}locothursday1.png"
+                         alt="loco" width="60%" height="60%">
+                </div>
+                <div class="col-md-3">
+                    <img src="{{ MEDIA_URL }}milkfriday.png"
+                         alt="milk" width="60%" height="60%">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 style="text-align:center; color:white">Garage Reviews</h2>
+            <hr>
+
+
+            <div class="container">
+                <div id="stars" class="starrr">
+                    <div class="row">
+                        <table class="table table-condensed" style="color: white">
+                            <thead>
+                            <tr>
+                                <th> Username</th>
+                                <th> Club</th>
+                                <th> Rating</th>
+                            </tr>
+                            </thead>
+                            {% for review in club_name %}
+                                <tbody>
+
+                                <td> {{ review.name }} </td>
+                                <td> {{ review.club_list }} </td>
+                                <td>{{ review.club_rating }}</td>
+                                </tbody>
+                            {% endfor %}
+
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
 
         </header>
 

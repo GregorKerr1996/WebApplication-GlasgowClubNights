@@ -1,7 +1,8 @@
 {% extends 'glasgowclubnights/club_base.html' %}
 {% load staticfiles %}
 {% block body_block %}
-    <div class="container-full">
+
+<!-- header to hold club logo image -->
         <header class="masthead">
 
             <div class="container">
@@ -20,7 +21,7 @@
                     </div>
                 </div>
             </div>
-
+<!-- Social Media Links -->
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
@@ -49,7 +50,7 @@
                 </div>
 
             </div>
-
+<!-- Club information and image -->
             <div class="container">
 
                 <div class="row">
@@ -90,6 +91,7 @@
                                     Opening Hours
                                 </button>
 
+<!-- Modal to show opening hours -->
                                 <div class="modal" id="myModal">
                                         <!-- Modal content-->
                                         <div class="modal-content">
@@ -144,6 +146,8 @@
                         </div>
                     </div>
                 </div>
+
+<!-- Java script to show modal -->
             <script>
 // Get the modal
 var modal = document.getElementById('myModal');
@@ -171,10 +175,11 @@ window.onclick = function(event) {
     }
 }
 </script>
+<!-- showing individual nights for the club -->
             <div class="container">
                 <h2 style="text-align:center; color:white">Club Nights at Bamboo</h2>
                 <hr>
-                <div>
+
                     <div class="row">
                         <div class="col-md-5">
                             <img src="{{ MEDIA_URL }}wnb.jpg"
@@ -189,12 +194,48 @@ window.onclick = function(event) {
                                  alt="milk" width="40%" height="40%">
                         </div>
                     </div>
-                </div>
             </div>
-        </header>
 
+        <div class="container">
+            <h2 style="text-align:center; color:white">Bamboo Reviews</h2>
+            <hr>
+
+<!-- space to show ratings -->
+            <div class="container">
+                <div id="stars" class="starrr">
+                    <div class="row">
+                        <table class="table table-condensed" style="color: white">
+                            <thead>
+                            <tr>
+                                <th> Username</th>
+                                <th> Club</th>
+                                <th> Rating</th>
+                            </tr>
+                            </thead>
+                            {% for review in club_name %}
+                                <tbody>
+
+                                <td> {{ review.name }} </td>
+                                <td> {{ review.club_list }} </td>
+                                <td>{{ review.club_rating }}</td>
+                                </tbody>
+                            {% endfor %}
+
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </header>
     </div>
-    <div class=container">
+<!-- Embedded google maps to show location of club -->
+    <div class="container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8956.045393835931!2d-4.26235372655214!3d55.862469510398064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488844209a848bd1%3A0x4ee847ffd0fb92f3!2sBamboo!5e0!3m2!1sen!2suk!4v1520427329400"
                 width="100%;" height="50%;" frameborder="0" style="position:absolute;" allowfullscreen></iframe>
     </div>

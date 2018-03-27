@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.contrib.auth.models import User
 from django.db import models
 
-
+#creates models for different forms and folders in the database
 class Club(models.Model):
     name = models.CharField(max_length=128, unique=True)
     club_rating = models.BigIntegerField(default=0)

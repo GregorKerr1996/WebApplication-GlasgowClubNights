@@ -1,3 +1,4 @@
+<!-- Script to add circles and captions to the journey tree -->
 <script>
     // Open the Modal
     function openModal() {
@@ -21,7 +22,7 @@
     function currentSlide(n) {
         showSlides(slideIndex = n);
     }
-
+    //sends circles and captions t
     function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
@@ -53,6 +54,7 @@
 {% endblock %}
 
 {% block body_block %}
+<!-- Displays profile pictures for the group, when images are clicked, captions appear beneath-->
     <div class="container">
 
         <div class="row">
@@ -106,14 +108,14 @@
             </div>
         </div>
     </div>
-
+<!-- A data tree that outlines our progress through the weeks of creating our application -->
     <br>
     <h3 style="text-align: center">Below is our journey creating Glasgow Club Nights!</h3>
     <div class="container">
         <ul class="timeline">
             <li class="timeline-inverted">
                 <div class="timeline-image">
-                    <img class="img-circle img-responsive" src={{ MEDIA_URL }}coryBoydDuck.jpg" alt="">
+                    <img class="img-circle img-responsive" src="{{ MEDIA_URL }}zero.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -133,7 +135,7 @@
             </li>
             <li class="timeline-inverted">
                 <div class="timeline-image">
-                    <img class="img-circle img-responsive" src={{ MEDIA_URL }}coryBoydDuck.jpg" alt="">
+                    <img class="img-circle img-responsive" src="{{ MEDIA_URL }}ten.jpg" height="110%" alt="">
                 </div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -152,7 +154,7 @@
             </li>
             <li>
                 <div class="timeline-image">
-                    <img class="img-circle img-responsive" src={{ MEDIA_URL }}coryBoydDuck.jpg" alt="">
+                    <img class="img-circle img-responsive" src="{{ MEDIA_URL }}twenty.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -171,7 +173,7 @@
             </li>
             <li class="timeline-inverted">
                 <div class="timeline-image">
-                    <img class="img-circle img-responsive" src={{ MEDIA_URL }}coryBoydDuck.jpg" alt="">
+                    <img class="img-circle img-responsive" src="{{ MEDIA_URL }}thirty.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -191,7 +193,7 @@
             </li>
             <li>
                 <div class="timeline-image">
-                    <img class="img-circle img-responsive" src={{ MEDIA_URL }}coryBoydDuck.jpg" alt="">
+                    <img class="img-circle img-responsive" src="{{ MEDIA_URL }}forty.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -209,7 +211,7 @@
             </li>
             <li>
                 <div class="timeline-image">
-                    <img class="img-circle img-responsive" src={{ MEDIA_URL }}coryBoydDuck.jpg" alt="">
+                    <img class="img-circle img-responsive" src="{{ MEDIA_URL }}fifty.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -229,7 +231,7 @@
             </li>
             <li>
                 <div class="timeline-image">
-                    <img class="img-circle img-responsive" src={{ MEDIA_URL }}coryBoydDuck.jpg" alt="">
+                    <img class="img-circle img-responsive" src="{{ MEDIA_URL }}sixty.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -251,7 +253,7 @@
             </li>
             <li>
                 <div class="timeline-image">
-                    <img class="img-circle img-responsive" src={{ MEDIA_URL }}coryBoydDuck.jpg" alt="">
+                    <img class="img-circle img-responsive" src="{{ MEDIA_URL }}seventy.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -273,7 +275,7 @@
             </li>
             <li>
                 <div class="timeline-image">
-                    <img class="img-circle img-responsive" src={{ MEDIA_URL }}coryBoydDuck.jpg" alt="">
+                    <img class="img-circle img-responsive" src="{{ MEDIA_URL }}eighty.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -292,6 +294,6 @@
             </li>
         </ul>
     </div>
-
+<!-- end of
 
 {% endblock %}

@@ -17,8 +17,9 @@ from gcn.forms import UserForm, UserProfileForm
 
 def home(request):
     club_rating_list = Club.objects.order_by('-club_rating')[:4]
+    club_night_list = Night.objects.order_by('-night_name')
 
-    context_dict = {'clubs': club_rating_list}
+    context_dict = {'clubs': club_rating_list, 'nights':club_night_list}
 
     response = render(request, 'glasgowclubnights/home.html', context=context_dict)
 
@@ -208,3 +209,28 @@ def add_night(request):
             print(form.errors)
 
     return render(request, 'glasgowclubnights/add_page.html', {'form': form})
+
+def show_night(request):
+
+    context_dict={}
+
+    try:
+        club = Club.objects.get()
+        night = Night.objects.filter(club_name=club)
+        context_dict['night'] = night
+        context_dict['club'] = club
+
+    except Club.DoesNotExist:
+        context_dict['night'] = None
+        context_dict['club'] = None
+
+    return render(request, 'glasgowclubnights/home.html', context_dict)
+
+
+
+
+
+
+
+
+

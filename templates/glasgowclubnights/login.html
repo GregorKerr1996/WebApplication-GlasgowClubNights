@@ -1,9 +1,8 @@
 {% extends 'glasgowclubnights/main_base.html' %}
 
 {% block body_block %}
-
+<!-- Defines form to take user details and creates an account with the database -->
     <div class="container">
-
         <div class="jumbotron">
             <h1 style="text-align: center">Login</h1>
         </div>
@@ -37,7 +36,7 @@
 
                     </div>
 
-
+                    <!-- Takes user to register page -->
                     <a href="{% url 'register' %}" class="btn btn-primary btn-lg active" role="button"
                        aria-pressed="true">Register</a>
                 </div>

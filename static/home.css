@@ -104,8 +104,8 @@
 .clubCircle img {
 
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 
 .aboutUs img {
@@ -821,4 +821,8 @@ html, body {
     float: left;
     border: none;
     position: relative;
+}
+
+#testpic {
+   visibility: hidden;
 }

@@ -1,7 +1,7 @@
 {% extends 'glasgowclubnights/club_base.html' %}
 {% load staticfiles %}
 {% block body_block %}
-    <div class="container-full">
+
         <header class="masthead">
 
             <div class="container">
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="infoBackground">
+
                             <div class="col-md-6">
                                 <h1 style="color: white;"> Kokomo Night Club</h1>
                                 <h4 style="color: white;">>
@@ -186,7 +186,47 @@
                 </div>
             </div>
         </div>
+
+        <div class="container">
+            <h2 style="text-align:center; color:white">Kokomo Reviews</h2>
+            <hr>
+
+
+            <div class="container">
+                <div id="stars" class="starrr">
+                    <div class="row">
+                        <table class="table table-condensed" style="color: white">
+                            <thead>
+                            <tr>
+                                <th> Username</th>
+                                <th> Club</th>
+                                <th> Rating</th>
+                            </tr>
+                            </thead>
+                            {% for review in club_name %}
+                                <tbody>
+
+                                <td> {{ review.name }} </td>
+                                <td> {{ review.club_list }} </td>
+                                <td>{{ review.club_rating }}</td>
+                                </tbody>
+                            {% endfor %}
+
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
     </div>
+
+
     </header>
 
     </div>

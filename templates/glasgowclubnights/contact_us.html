@@ -1,14 +1,15 @@
+<!-- Php to send information to to relevant email address -->
 <?php
 if($_POST["message"]) {
     mail("gregor.kerr.glasgow@gmail.com", "Form to email message", $_POST["message"], "From: an@email.address");
 }
 ?>
 
-
-
 {% extends 'glasgowclubnights/main_base.html' %}
 
 {% block body_block %}
+
+<!-- Defines and formats form to leave a message along with user details -->
     <section id="background">
         <header class="mastheadContact">
             <section id="contact" class="content-section text-center">
@@ -16,11 +17,13 @@ if($_POST["message"]) {
                     <div class="container">
                         <h2>Contact Us</h2>
                         <p>Feel free to shout us by feeling the contact form or visiting our social network sites like
-                            Fackebook,Whatsapp,Twitter.</p>
+                            Fackebook,YouTube,Twitter.</p>
                         <div class="row">
                             <div class="col-md-8 col-md-offset-2">
-                                <form class="form-horizontal" action="email.php"
+                                <form class="form-horizontal" action="{% url 'home' %}"
                                       form method="post" enctype="text/plain">
+
+                                    {% csrf_token %}
                                     <div class="form-group">
                                         <label for="exampleInputName2">Name</label>
                                         <input type="text" class="form-control" id="exampleInputName2"
@@ -35,10 +38,12 @@ if($_POST["message"]) {
                                         <label for="exampleInputText">Your Message</label>
                                         <textarea class="form-control" placeholder="Description"></textarea>
                                     </div>
-                                    <button type="submit" class="btn btn-default">Send Message</button>
+                                    <button type="submit" class="btn btn-default" onclick="submit()">Send Message</button>
                                 </form>
 
                                 <hr>
+
+                                <!-- links to our relevant social medias -->
                                 <h3>Our Social Sites</h3>
                                 <ul class="list-inline banner-social-buttons">
                                     <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter"> <span
@@ -57,7 +62,13 @@ if($_POST["message"]) {
         </header>
     </section>
 
+<script>
+    function submit() {
 
+        window.confirm("Thank you, your form has been sent to us");
 
+    }
+
+</script>
 
 {% endblock %}

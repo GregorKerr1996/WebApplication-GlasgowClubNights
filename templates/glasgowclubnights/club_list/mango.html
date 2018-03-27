@@ -1,7 +1,7 @@
 {% extends 'glasgowclubnights/club_base.html' %}
 {% load staticfiles %}
 {% block body_block %}
-    <div class="container-full">
+
         <header class="masthead">
 
             <div class="container">
@@ -12,7 +12,7 @@
 
                     <div class="col-md-6">
                         <p style="text-align: center;"><img src="{{ MEDIA_URL }}mangologo.png" class="img-circle"
-                                                            class="img-responsive" alt="Bamboo"></p>
+                                                            class="img-responsive" alt="Mango Logo"></p>
                     </div>
 
                     <div class="col-md-3">
@@ -54,11 +54,11 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="thumbnail">
-                            <img src="{{ MEDIA_URL }}mango.jpg" alt="Bamboo" class="img-responsive">
+                            <img src="{{ MEDIA_URL }}mango.jpg" alt="Mango" class="img-responsive">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="infoBackground">
+
                             <div class="col-md-6">
                                 <h1 style="color: white;"> Mango Tropical Bar/Club</h1>
                                 <h4 style="color: white;">>
@@ -173,6 +173,61 @@
                     }
                 }
             </script>
+
+            <div class="container">
+            <h2 style="text-align:center; color:white">Club Nights at Mango</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="{{ MEDIA_URL }}juicytuesday.png"
+                         alt="juicy tuesday" width="50%" height="50%">
+                </div>
+                <div class="col-md-4">
+                    <img src="{{ MEDIA_URL }}locothursday1.png"
+                         alt="loco" width="60%" height="60%">
+                </div>
+                <div class="col-md-3">
+                    <img src="{{ MEDIA_URL }}milkfriday.png"
+                         alt="milk" width="60%" height="60%">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 style="text-align:center; color:white">Mango Reviews</h2>
+            <hr>
+
+
+            <div class="container">
+                <div id="stars" class="starrr">
+                    <div class="row">
+                        <table class="table table-condensed" style="color: white">
+                            <thead>
+                            <tr>
+                                <th> Username</th>
+                                <th> Club</th>
+                                <th> Rating</th>
+                            </tr>
+                            </thead>
+                            {% for review in club_name %}
+                                <tbody>
+
+                                <td> {{ review.name }} </td>
+                                <td> {{ review.club_list }} </td>
+                                <td>{{ review.club_rating }}</td>
+                                </tbody>
+                            {% endfor %}
+
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
         </header>
 
     </div>
