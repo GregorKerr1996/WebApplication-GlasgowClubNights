@@ -40,9 +40,70 @@
     </head>
 
     <body>
+<<<<<<< HEAD
     {% if request.user.username == "kushion" %} <!-- Club owner authentication -->
 
     <!-- Code for navigation bar -->
+        <section id="navbar">
+=======
+>>>>>>> a5256b741eea48f877e6ebeb7103d3505fc7cba6
+
+    {% if user.is_authenticated %}
+        <section id="navbar">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand">Glasgow Club Nights</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+
+                        <!-- Links for nav bar -->
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'club_list' %}">Club List</a></li>
+                        <li><a href="{% url 'reviews' %}">Make a Review</a></li>
+                        <li><a href="{% url 'about_us' %}">About Us</a></li>
+                        <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+                        <li></li>
+                        <li style="float:right" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{ user.username }}
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'logout' %}">Logout</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+<<<<<<< HEAD
+                     <div class="nav navbar-form navbar-right">
+                         <!-- HTML for search bar -->
+                        <input type="text" placeholder="Search.." id="search">
+
+                        <button type="button" onclick="search()">Submit</button>
+                    </div>
+=======
+
+                    <form class="nav navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search.." id="search">
+                            <button type="submit" class="btn btn-default" id="submit" onclick="search()">Submit</button>
+                        </div>
+                    </form>
+
+>>>>>>> a5256b741eea48f877e6ebeb7103d3505fc7cba6
+                </div>
+            </nav>
+        </section>
+
+
+<<<<<<< HEAD
+    {% elif user.is_authenticated %} <!-- Registered user authentication -->
+
+    <!-- Code for navigation bar -->
+=======
+
+
+    {% elif request.user|has_group:"Clubs" %}
+>>>>>>> a5256b741eea48f877e6ebeb7103d3505fc7cba6
         <section id="navbar">
 
             <nav class="navbar navbar-inverse">
@@ -71,57 +132,40 @@
                             </ul>
                         </li>
                     </ul>
-                     <div class="nav navbar-form navbar-right">
-                         <!-- HTML for search bar -->
-                        <input type="text" placeholder="Search.." id="search">
-
-                        <button type="button" onclick="search()">Submit</button>
-                    </div>
-                </div>
-            </nav>
-        </section>
-
-
-    {% elif user.is_authenticated %} <!-- Registered user authentication -->
-
-    <!-- Code for navigation bar -->
-        <section id="navbar">
-            <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand">Glasgow Club Nights</a>
-                    </div>
-                    <ul class="nav navbar-nav">
-
-                        <!-- Links for nav bar -->
-                        <li><a href="{% url 'home' %}">Home</a></li>
-                        <li><a href="{% url 'club_list' %}">Club List</a></li>
-                        <li><a href="{% url 'reviews' %}">Make a Review</a></li>
-                        <li><a href="{% url 'about_us' %}">About Us</a></li>
-                        <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
-                        <li></li>
-                        <li style="float:right" class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{ user.username }}
-                                <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{% url 'logout' %}">Logout</a></li>
-
-                            </ul>
-                        </li>
-                    </ul>
+<<<<<<< HEAD
                     <!-- HTML for search bar -->
                      <div class="nav navbar-form navbar-right">
                         <input type="text" placeholder="Search.." id="search">
 
                         <button type="button" onclick="search()">Submit</button>
                     </div>
+=======
+                    <form class="nav navbar-form navbar-right" action="/action_page.php">
+
+
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" placeholder="Search.." id="search">
+                            <button type="submit" class="btn btn-default" id="submit">Submit</button>
+
+                        </div>
+
+                        </li>
+                    </form>
+>>>>>>> a5256b741eea48f877e6ebeb7103d3505fc7cba6
                 </div>
+
             </nav>
         </section>
 
+<<<<<<< HEAD
     {% else %} <!-- Authentication for normal user -->
 
     <!-- Code for navigation bar -->
+=======
+
+    {% else %}
+>>>>>>> a5256b741eea48f877e6ebeb7103d3505fc7cba6
         <section id="navbar">
             <nav class="navbar navbar-inverse">
                 <div class="container-fluid">

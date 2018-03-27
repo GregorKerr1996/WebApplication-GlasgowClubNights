@@ -1,7 +1,10 @@
 {% extends 'glasgowclubnights/main_base.html' %}
 {% block body_block %}
 
+<<<<<<< HEAD
 <!-- Code for carousel -->
+=======
+>>>>>>> a5256b741eea48f877e6ebeb7103d3505fc7cba6
     <section id="intro">
         <div class="container">
             <section id="carousel-title">
@@ -133,6 +136,7 @@
     </div>
     <br>
 
+<<<<<<< HEAD
     {% if nights %}
 
         {% for night in nights %}
@@ -150,6 +154,9 @@
 
     <script type="text/javascript">
 
+=======
+    <script>
+>>>>>>> a5256b741eea48f877e6ebeb7103d3505fc7cba6
         switch (new Date().getDay()) {
 //SUNDAY
             case 0:
@@ -179,7 +186,7 @@
                 mon1.alt = "viper";
                 mon1.usemap = "mon1"
                 document.getElementById('first').appendChild(mon1);
-                document.getElementById('cap1').innerHTML = "<a href=\"{% url 'viper' %}\">Monday Night Heat</a>";
+                document.getElementById('cap1').innerHTML = "<a href=\"{% url 'viper' %}\"> Monday Night Heat</a>";
 
                 var mon2 = document.createElement("IMG");
                 mon2.src = "{{ MEDIA_URL }}kokomo1.jpg";
@@ -308,7 +315,66 @@
 
                 document.getElementById('carousel-header').innerHTML = "Check out the biggest nights for Saturday!";
         }
+
     </script>
+<<<<<<< HEAD
+=======
+
+    <script>
+        // Open the Modal
+        function openModal() {
+            document.getElementById('myModal').style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+
+    <script>
+        var x = 0;
+        for (var i = 0; i < 4; i++) {
+            var x = x + 1;
+        }
+    </script>
+>>>>>>> a5256b741eea48f877e6ebeb7103d3505fc7cba6
 
 <!-- Script to add animation to the top rated club models -->
 <script>
