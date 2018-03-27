@@ -16,8 +16,8 @@ from gcn.forms import UserForm, UserProfileForm
 # Create your views here.
 
 def home(request):
-    club_rating_list = Club.objects.order_by('-club_rating')[:4]
-    club_night_list = Night.objects.order_by('-night_name')
+    club_rating_list = Club.objects.order_by('-club_rating')[:5]
+    club_night_list = Night.objects.order_by('night_name')
 
     context_dict = {'clubs': club_rating_list, 'nights':club_night_list}
 

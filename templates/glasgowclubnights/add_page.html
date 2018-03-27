@@ -13,7 +13,7 @@
             <div class="col-md-8">
                 <h1>Add a Night</h1>
                 {% block content_block %}
-                    <form id="night_form" method="post" action="/gcn/add_night/">
+                    <form id="night_form" method="post" action="/gcn/">
                     {% csrf_token %}
 
                     {{ form.as_p }}

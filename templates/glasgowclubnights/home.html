@@ -1,11 +1,7 @@
 {% extends 'glasgowclubnights/main_base.html' %}
 {% block body_block %}
-
-<<<<<<< HEAD
 <!-- Code for carousel -->
-=======
->>>>>>> a5256b741eea48f877e6ebeb7103d3505fc7cba6
-    <section id="intro">
+     <section id="intro">
         <div class="container">
             <section id="carousel-title">
                 <div class="container">
@@ -32,7 +28,6 @@
                         <div class="carousel-inner" role="listbox">
 
                             <div class="item active">
-                                <!-- Space for images to be sent from Javascript -->
                                 <div id="first">
 
                                 </div>
@@ -79,14 +74,14 @@
         <div class="container">
             <div class="row">
                     <div class="col-md-6"><h2 style="text-align:left">Top-rated Clubs</h2></div>
-                    <div class="col-md-6"><h2 style="text-align:right">Recently Added Nights</h2></div>
+                    <div class="col-md-6"><h2 style="text-align:right">Our Club Nights</h2></div>
 
             <div class="container">
                  <div class="row">
                     <div class="col-md-2"></div>
                      {% if clubs %}
                      <div class="clubCircle">
-                        <div class="col-md-2" id ="ratedpics">
+                        <div class="col-md-3" id ="ratedpics">
                             {% for popular in clubs %}
 
                                     <!-- short script to remove the capital letter from the start of club names -->
@@ -106,8 +101,18 @@
                         </div>
                         {% endif %}
 
-                    <div class="col-md-2"></div>
+                    <div class="col-md-5">
+                        {% if nights %}
 
+                            {% for night in nights %}
+                                <p>
+                                    <h4 style="text-align:right">{{night}}</h4>
+                                </p>
+
+                            {% endfor %}
+                        {% endif %}
+                </div>
+                <div class="col-md-2"></div>
                 </div>
             </div>
             </div>
@@ -136,27 +141,11 @@
     </div>
     <br>
 
-<<<<<<< HEAD
-    {% if nights %}
-
-        {% for night in nights %}
-            <li>
-                {{night}}
-
-            </li>
-        {% endfor %}
-    {% endif %}
-
-
-
 
     <!-- Script to display different pictures on the carousel depending on the day of the week -->
 
     <script type="text/javascript">
 
-=======
-    <script>
->>>>>>> a5256b741eea48f877e6ebeb7103d3505fc7cba6
         switch (new Date().getDay()) {
 //SUNDAY
             case 0:
@@ -317,8 +306,7 @@
         }
 
     </script>
-<<<<<<< HEAD
-=======
+
 
     <script>
         // Open the Modal
@@ -374,7 +362,7 @@
             var x = x + 1;
         }
     </script>
->>>>>>> a5256b741eea48f877e6ebeb7103d3505fc7cba6
+
 
 <!-- Script to add animation to the top rated club models -->
 <script>
