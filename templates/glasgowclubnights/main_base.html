@@ -40,8 +40,67 @@
     </head>
 
     <body>
+    <!--Checks if there are users in database (ie no users have been created -->
+    {% if user is null %}
+        <section id="navbar">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand">Glasgow Club Nights</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'register' %}">Register</a></li>
+                        <li><a href="{% url 'club_list' %}">Club List</a></li>
+                        <li><a href="{% url 'about_us' %}">About Us</a></li>
+                        <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+                    </ul>
+                    <div class="nav navbar-form navbar-right">
+                        <input type="text" placeholder="Search.." id="search">
+                        <button type="button" onclick="search()">Submit</button>
+                    </div>
 
-    {% if user.is_authenticated %}
+                </div>
+            </nav>
+        </section>
+        <!--Checks if user is a club (atm only modeled for kushion
+        could implement an array script to search if user = club name-->
+    {% elif user.username == 'kushion' %}
+        <section id="navbar">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand">Glasgow Club Nights</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'club_list' %}">Club List</a></li>
+                        <li><a href="{% url 'add_night' %}">Add New Night</a></li>
+                        <li><a href="{% url 'about_us' %}">About Us</a></li>
+                        <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+                        <li></li>
+                        <li style="float:right" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{ user.username }}
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'logout' %}">Logout</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <div class="nav navbar-form navbar-right">
+                        <input type="text" placeholder="Search.." id="search">
+                        <button type="button" onclick="search()">Submit</button>
+                    </div>
+
+                </div>
+            </nav>
+        </section>
+        <!--Checks if user has an account -->
+    {% elif user.is_authenticated %}
         <section id="navbar">
             <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
@@ -66,7 +125,7 @@
                     </ul>
 
 
-                        <div class="nav navbar-form navbar-right">
+                    <div class="nav navbar-form navbar-right">
                         <input type="text" placeholder="Search.." id="search">
                         <button type="button" onclick="search()">Submit</button>
                     </div>
@@ -74,50 +133,7 @@
                 </div>
             </nav>
         </section>
-
-
-
-
-    {% elif request.user|has_group:"Clubs" %}
-        <section id="navbar">
-
-            <nav class="navbar navbar-inverse">
-
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand">Glasgow Club Nights</a>
-                    </div>
-                    <ul class="nav navbar-nav">
-                        <li><a href="{% url 'home' %}">Home</a></li>
-                        <li><a href="{% url 'club_list' %}">Club List</a></li>
-                        <li><a href="{% url 'add_night' %}">Add New Night</a></li>
-                        <li><a href="{% url 'about_us' %}">About Us</a></li>
-                        <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-                        <li></li>
-                        <li style="float:right" class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{ user.username }}
-                                <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{% url 'logout' %}">Logout</a></li>
-
-
-                            </ul>
-                        </li>
-                    </ul>
-                        <div class="nav navbar-form navbar-right">
-                        <input type="text" placeholder="Search.." id="search">
-                        <button type="button" onclick="search()">Submit</button>
-                    </div>
-
-                        </li>
-                    </form>
-                </div>
-
-            </nav>
-        </section>
-
-
+        <!--This is the case when the user database is populated however no user logged in currently -->
     {% else %}
         <section id="navbar">
             <nav class="navbar navbar-inverse">
@@ -126,16 +142,16 @@
                         <a class="navbar-brand">Glasgow Club Nights</a>
                     </div>
                     <ul class="nav navbar-nav">
-                        <li class="active">
                         <li><a href="{% url 'home' %}">Home</a></li>
-                        <li><a href="{% url 'login' %}">Login</a></li>
                         <li><a href="{% url 'club_list' %}">Club List</a></li>
+                        <li><a href="{% url 'login' %}">Login</a></li>
                         <li><a href="{% url 'about_us' %}">About Us</a></li>
                         <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
-                        <li> {{ user.username }}</li>
 
 
                     </ul>
+
+
                     <div class="nav navbar-form navbar-right">
                         <input type="text" placeholder="Search.." id="search">
                         <button type="button" onclick="search()">Submit</button>
@@ -146,30 +162,31 @@
         </section>
     {% endif %}
 
-<script type="text/javascript">
-            //Redirects user to relevant page if they correctly search for a club
-            function search() {
-                var input = document.getElementById('search');
-                var clubs = ["bamboo", "cathouse", "firewater", "garage", "hive", "kokomo", "kushion", "lacheetah", "mango", "polo", "sanctuary", "shimmy", "subclub", "swg3", "viper"];
-                var filter = input.value.toLowerCase();
-                var valid = false;
-                for (var i = 0; i < clubs.length; i++) {
-                    if (clubs[i].valueOf() === filter.valueOf()) {
-                        valid = true;
-                        break;
-                    }
-                }
-                if (valid === true) {
-                    window.location.href = "/gcn/"+filter;
-                } else {
-                    window.confirm("Your search has not matched the name of a club in our Repo, please try again.");
+
+    <!--Search bar script -->
+    <script type="text/javascript">
+        //Redirects user to relevant page if they correctly search for a club
+        function search() {
+            var input = document.getElementById('search');
+            var clubs = ["bamboo", "cathouse", "firewater", "garage", "hive", "kokomo", "kushion", "lacheetah", "mango", "polo", "sanctuary", "shimmy", "subclub", "swg3", "viper"];
+            var filter = input.value.toLowerCase();
+            var valid = false;
+            for (var i = 0; i < clubs.length; i++) {
+                if (clubs[i].valueOf() === filter.valueOf()) {
+                    valid = true;
+                    break;
                 }
             }
-        </script>
+            if (valid === true) {
+                window.location.href = "/gcn/" + filter;
+            } else {
+                window.confirm("Your search has not matched the name of a club in our Repo, please try again.");
+            }
+        }
+    </script>
 
 {% endblock %}
 
 {% block body_block %}
 
 {% endblock %}
-

@@ -78,8 +78,9 @@
                     </div>
 
                 </div>
-                <input type="submit" onclick="submit()" value="Leave Review"/>
-            </form>
+                </form>
+                <button type="submit" onclick="submit()">Leave Review</button>
+
         </div>
 
 
@@ -91,12 +92,15 @@
 
     {% endblock %}.
 
-<script>
+<script type="text/javascript">
 
-    function submit(){
+    function submit() {
 
-        var con=confirm("Do you want to submit for sure?");
-        window.confirm("Your search has not matched the name of a club in our Repo, please try again.");
+        var star = document.getElementById("count").innerHTML;
+
+
+        window.confirm("Thanks for your review, you gave " + star + " stars, it has been submitted");
+        window.location.href = "/gcn/"
     }
 
 </script>
